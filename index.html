@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UfoCourier</title>
+    <meta name="description" content="Your delivery - Our mission" />
+
+    <link rel="stylesheet" href="./src/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="donate p-2">
+        <p class="donate-text m-0 p-0">We stand with Ukraine. Find out how to support Ukraine <a href="https://u24.gov.ua/" target="_blank" class="donate-link">here</a></p>
+    </div>
+    <div class="header-section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg" style="background-color: transparent;">
+                <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt="logo" title="Homepage">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </a>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item p-0">
+                                <a class="nav-link active" aria-current="page" title="Homepage" href="#index">Homepage</a>
+                            </li>
+                            <li class="nav-item p-0">
+                                <a class="nav-link" title="History" href="#history">History</a>
+                            </li>
+                            <li class="nav-item p-0">
+                                <a class="nav-link" title="Food" href="#food">Food</a>
+                            </li>
+                            <li class="nav-item p-0">
+                                <a class="nav-link" title="Photos" href="#photos">Photos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+        <!-- MAIN HEADER & DESCRIPTION -->
+    
+        <div class="container header-container mb-5">
+            <h1 class="title mt-5 mb-5">UfoCourier</h1>
+            <h2 class="subtitle mb-5">Your Delivery is our Mission</h2>
+            <h3 class="subtitle2 mb-3">Become a Sender or Courier in a few steps</h3>
+            <div class="row g-3 m-1 p-3">
+                <div class="col">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected="1">Package 📦</option>
+                        <option value="2">Passenger 🚗</option>
+                        <option value="3">Passenger&Package 🚗 📦</option>
+                    </select>
+                </div>
+                
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="From Anywhere" aria-label="Pick-up Location">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Any Day" aria-label="Pick-up Date">
+                </div>
+                <div class="col search-btn">
+                    <button type="button" class="btn btn-primary">Search</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <!-- <div class="line">
+        <p></p>
+    </div> -->
+
+    <div class="desc-section ms-5 me-5">
+        <p class="text-center">
+            <span style="font-weight: 700;">“UfoCourier”</span> – is a platform that connects minorities living abroad with small delivery partners offering faster and more cost-effective cross-border shipment in comparison to traditional carriers.
+        </p>
+    </div>
+
+
+
+
+</body>
+</html>
