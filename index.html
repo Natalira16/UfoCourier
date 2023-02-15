@@ -12,34 +12,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/7a28aaea4a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- NAVBAR -->
+    <!-- DONATE -->
     <div class="donate p-2">
         <p class="donate-text m-0 p-0">We stand with Ukraine. Find out how to support Ukraine <a href="https://u24.gov.ua/" target="_blank" class="donate-link">here</a></p>
     </div>
-    <div class="header-section">
+    <!-- NAVBAR -->
+    <div class="header-section mb-5">
         <div class="container">
             <nav class="navbar navbar-expand-lg" style="background-color: transparent;">
                 <div class="container-fluid">
-                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt="logo" title="Homepage">
+                    <div class="d-flex flex-row align-items-center">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png
+                            " class="logo" alt="logo" title="Homepage">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                         </a>
+                        <a class="navbar-brand" href="index.html">
+                            <p class="navbar-title m-0 p-0">UfoCourier</p>
+                        </a>
+                    </div>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item p-0">
                                 <a class="nav-link active" aria-current="page" title="Homepage" href="#index">Homepage</a>
                             </li>
                             <li class="nav-item p-0">
-                                <a class="nav-link" title="History" href="#history">History</a>
+                                <a class="nav-link" title="About" href="#about">About</a>
                             </li>
                             <li class="nav-item p-0">
-                                <a class="nav-link" title="Food" href="#food">Food</a>
+                                <a class="nav-link" title="Contact" href="#contact">Contact</a>
                             </li>
                             <li class="nav-item p-0">
-                                <a class="nav-link" title="Photos" href="#photos">Photos</a>
+                                <a class="nav-link" title="Language" href="#language">🌍</a>
+                            </li>
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link log-btn" title="Log in" href="#login">Log In</a>
+                            </li>
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link sign-btn" title="Sign up" href="#signup">Sign Up</a>
                             </li>
                         </ul>
                     </div>
@@ -49,46 +64,218 @@
 
         <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
 
-        <!-- MAIN HEADER & DESCRIPTION -->
+
+        <!-- HERO SECTION -->
     
         <div class="container header-container mb-5">
-            <h1 class="title mt-5 mb-5">UfoCourier</h1>
-            <h2 class="subtitle mb-5">Your Delivery is our Mission</h2>
-            <h3 class="subtitle2 mb-3">Become a Sender or Courier in a few steps</h3>
-            <div class="row g-3 m-1 p-3">
-                <div class="col">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected="1">Package 📦</option>
-                        <option value="2">Passenger 🚗</option>
-                        <option value="3">Passenger&Package 🚗 📦</option>
-                    </select>
-                </div>
-                
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="From Anywhere" aria-label="Pick-up Location">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Any Day" aria-label="Pick-up Date">
-                </div>
-                <div class="col search-btn">
-                    <button type="button" class="btn btn-primary">Search</button>
-                </div>
-            </div>    
+            <h1 class="title">Your Delivery is our Mission</h1>
+            <h2 class="subtitle">Become a Sender or Courier in a few steps</h2>
+            <div class="d-flex justify-content-around">
+                <div class="row mt-5 mb-5 p-3">
+                    <div class="col-4">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected="1">Sender 📦</option>
+                            <option value="2">Courier 🚗</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected="1">Package 📦</option>
+                            <option value="2">Passenger 🚗</option>
+                            <option value="3">Passenger&Package 🚗 📦</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <input type="text" class="form-control" placeholder="From Anywhere" aria-label="Pick-up Location">
+                    </div>
+                    <div class="col-1 search-btn">
+                        <button type="button" class="btn btn-primary">Search</button>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="d-flex justify-content-around">
+            <div class="desc-section ms-5 me-5">
+                <p class="desc-text">
+                    <span style="font-weight: 700;">“UfoCourier”</span> – is a platform that connects minorities living abroad with small delivery partners offering faster and more cost-effective cross-border shipment in comparison to traditional carriers.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- ADVANTAGES & DESCRIPTION -->
+
+    <div class="advantages-section mt-5 mb-5 d-flex justify-content-around">
+        <ul class="advantages-list d-flex align-items-center">
+            <li class="advantages-item">
+                <h3 class="advantages-img">💰</h3>
+                <h4 class="advantages-title mt-3 mb-3">Save money</h4>
+                <p class="advantages-desc m-0">add your package to the others in truck</p>
+            </li>
+            <li class="advantages-item">
+                <h3 class="advantages-img">🌍</h3>
+                <h4 class="advantages-title mt-3 mb-3">Ecological shipment</h4>
+                <p class="advantages-desc m-0">more fully-loaded trucks means less greenhouse gas emissions</p>
+            </li>
+            <li class="advantages-item">
+                <h3 class="advantages-img">🙋🏻</h3>
+                <h4 class="advantages-title mt-3 mb-3">Everyone is a Courier</h4>
+                <p class="advantages-desc m-0">delivery company, private driver or just a traveler</p>
+            </li>
+            <li class="advantages-item">
+                <h3 class="advantages-img">🚚</h3>
+                <h4 class="advantages-title mt-3 mb-3">To the remote place</h4>
+                <p class="advantages-desc m-0">even if the place is undeveloped or disrupted by war and natural disasters</p>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- DESKTOP & MOBILE VIEW -->
+
+    <div class="view-section d-flex justify-content-around">
+        <div class="row">
+            <div class="laptop-icon col-8">
+                <i class="fa-solid fa-laptop"></i>
+            </div>
+            <div class="mobile-icon col-4">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
         </div>
     </div>
 
-    <!-- <div class="line">
-        <p></p>
-    </div> -->
 
-    <div class="desc-section ms-5 me-5">
-        <p class="text-center">
-            <span style="font-weight: 700;">“UfoCourier”</span> – is a platform that connects minorities living abroad with small delivery partners offering faster and more cost-effective cross-border shipment in comparison to traditional carriers.
-        </p>
+
+    <!-- BOOK A DEMO -->
+
+    <div class="text-center">
+        <h3 class="demo-title mt-5 mb-5 p-0">HOW IT WORKS</h3>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 project-description button">
+                <p class="text-muted">
+                    As someone who wants to book a trip or send a package, you can search trips according to your criteria.
+                    <br/>
+                    <br/>
+                    You can enter the starting and ending point of your trip, as well as the desired period in which the trip should take place.
+                    <br/>
+                    <br/>
+                    For the search results, not only 100% hits are displayed, but also trips with waypoints in the nearby area.
+                    <br/>
+                    <br/>
+                    Via a dialog-oriented procedure, you can get in touch with the driver of this trip. Via a bidding process, the driver can accept or reject your request.
+                    <br/>
+                    <br/>
+                    Your request is automatically saved and is available for searches by the drivers.
+                </p>
+            </div>
+            <div class="col-md-6 d-lg-block">
+                <img src="images/screen1.png" class="img-fluid rounded" alt="screen">
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 d-lg-block">
+                <img src="images/screen2.png" class="img-fluid rounded" alt="screen">
+            </div>
+            <div class="col-md-6 project-description button">
+                <p class="text-muted">
+                    At UfoCourier any driver can offer a ride, for passengers, packages and both at the same time.
+                    <br/>
+                    <br/>
+                    Whether by car, bike, truck, van, plane or ship, anything that moves may be offered, professionally or casually.
+                    <br/>
+                    <br/>
+                    A comprehensive route can be created for a trip, with a large number of waypoints, all of which will be consulted when a potential customer is looking for trips.
+                    <br/>
+                    <br/>
+                    Riders are supported throughout the entire process: From the creation, to the acceptance of requests, to the ride realization.
+                </p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="demo-btn">BOOK A DEMO</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CONTACT US -->
+
+    <div class="contact d-flex justify-content-center">
+        <h3 class="mt-4 mb-4 p-0">CONTACT US</h3>
+        <p class="contact-text">Let’s talk to see how we can automate your freight and help your business grow faster – together.</p>
+        <button type="button" class="contact-btn">CONTACT US</button>
     </div>
 
 
 
+    <!-- SUPPORTED BY -->
+
+    <div class="support-item d-flex justify-content-center">
+        <h3 class="support-title mt-4 mb-0 p-0">SUPPORTED BY</h3>
+    </div>
+    <div class="support-item mt-5 mb-5 d-flex justify-content-around">
+        <ul class="support-list d-flex align-items-center">
+            <li class="support-item me-3">
+                <img class="support-img img-fluid" src="images/europäische-union.jpeg" alt="Europäische Union">
+            </li>
+            <li class="support-item me-3">
+                <img class="support-img img-fluid" src="images/esf-berlin.jpeg" alt="ESF Berlin">
+            </li>
+            <li class="support-item me-3">
+                <img class="support-img img-fluid" src="images/senatsverwaltung.jpeg" alt="Senatsverwaltung">
+            </li>
+            <li class="support-item">
+                <img class="support-img img-fluid" src="images/sibb.png" alt="SIBB">
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <div class="mt-0 pt-3 pb-3 footer d-flex justify-content-around">
+        <div class="store-links">
+            <i class="store-link fa-brands fa-app-store"></i>
+            <i class="store-link fa-brands fa-google-pay"></i>
+        </div>
+        <div class="media-links">
+            <i class="media-link fa-brands fa-instagram"></i>
+            <i class="media-link fa-brands fa-facebook"></i>
+            <i class="media-link fa-brands fa-linkedin"></i>
+        </div>
+        <nav class="navbar navbar-expand-lg footer justify-content-center text-center">
+            <p class="m-0 p-3">
+                Copyright © 2023 UfoCourier. All rights reserved. Built with ❤️ in Berlin.
+            </p>
+        </nav>
+    </div>
 
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+<script>
+    let mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
 </html>

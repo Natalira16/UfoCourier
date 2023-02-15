@@ -11,23 +11,13 @@ h6 {
     font-family: 'Merriweather', serif;
 }
 
-h1.title {
-    font-size: 98px;
-    color: #fff;
-}
-
-h2.subtitle {
-    font-size: 38px;
-}
-
-h3.subtitle2 {
-    font-size: 24px;
-}
-
-
-a {
+a,
+button {
     transition: all 300ms ease-in-out;
 }
+
+
+/* DONATE */
 
 .donate {
     background-color: rgba(14, 91, 200, 0.85);
@@ -52,13 +42,80 @@ a.donate-link:focus {
     color: #fff;
 }
 
+
+
+/* NAVBAR */
+
 .logo {
     max-width: 60px;
+}
+
+.navbar-title {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    color: rgba(14, 91, 200, 0.85);
+}
+
+a.nav-link {
+    color: rgba(14, 91, 200, 0.85);
 }
 
 a.nav-link:not(last-child) {
     margin-right: 25px;
     font-family: 'Merriweather', serif;
+}
+
+a.log-btn {
+    text-decoration: none;
+    border: 1px solid;
+    border-color: rgb(45, 119, 255);
+    border-radius: 4px;
+    background: none;
+    color: rgb(45, 119, 255);
+    cursor: pointer;
+    outline: none;
+    padding: 4px 8px;
+}
+
+a.log-btn:hover,
+a.log-btn:focus {
+    border-color: rgb(45, 119, 255);
+    background-color: rgb(45, 119, 255);
+    color: rgb(255, 255, 255)
+}
+
+a.sign-btn {
+    text-decoration: none;
+    border: 1px solid;
+    border-color: rgb(45, 119, 255);
+    border-radius: 4px;
+    background-color: rgb(45, 119, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    outline: none;
+    padding: 4px 8px;
+}
+
+a.sign-btn:hover,
+a.sign-btn:focus {
+    border-color: rgb(45, 119, 255);
+    background: none;
+    color: rgb(45, 119, 255);
+}
+
+
+/* HERO */
+
+h1.title {
+    font-size: 68px;
+    margin: 80px auto;
+    color: rgba(14, 91, 200, 0.85);
+}
+
+h2.subtitle {
+    font-size: 32px;
+    margin: 0 auto 30px;
+    color: rgba(14, 91, 200, 0.85);
 }
 
 .header-container {
@@ -68,11 +125,13 @@ a.nav-link:not(last-child) {
 
 .header-section {
     position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 
 .header-section:before {
     content: ' ';
-    /* justify-content: center; */
+    justify-content: center;
     display: block;
     position: absolute;
     background-image: url("../images/background.jpg");
@@ -83,7 +142,7 @@ a.nav-link:not(last-child) {
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 .search-btn {
@@ -99,7 +158,7 @@ a.nav-link:not(last-child) {
     font-size: 24px;
     border: none;
     outline: none;
-    background-color: rgb(179, 207, 255);
+    background-color: rgba(14, 91, 200, 0.85);
     color: white;
     cursor: pointer;
     padding: 7px 15px 1px;
@@ -111,14 +170,9 @@ a.nav-link:not(last-child) {
     background-color: rgb(122, 171, 255);
 }
 
-/* .line {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    height: 0px;
-    top: auto;
-    border: 1px solid #4F89E9;
-} */
+
+
+/* ADVANTAGES & DESCRIPTION */
 
 .desc-section {
     max-width: 800px;
@@ -126,7 +180,176 @@ a.nav-link:not(last-child) {
     line-height: 46px;
 }
 
-.desc-section p {
+p.desc-text {
     font-family: 'Merriweather', serif;
     font-size: 18px;
+    color: rgba(14, 91, 200, 0.85);
+}
+
+ul.advantages-list {
+    list-style: none;
+    padding: 0;
+    margin: 50px auto;
+}
+
+li.advantages-item {
+    text-align: center;
+    border: 1px solid;
+    border-color: rgb(122, 171, 255);
+    border-radius: 50%;
+    padding: 20px;
+    width: 280px;
+    height: 280px;
+}
+
+li.advantages-item:not(last-child) {
+    margin-right: 25px;
+}
+
+.advantages-img {
+    font-size: 48px;
+}
+
+.advantages-title {
+    font-weight: 700;
+}
+
+.advantages-desc {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Merriweather', serif;
+}
+
+
+
+/* DESKTOP & MOBILE VIEW */
+
+.laptop-icon {
+    font-size: 300px;
+}
+
+.mobile-icon {
+    font-size: 300px;
+}
+
+
+
+/* BOOK A DEMO */
+
+.demo-title {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.demo-btn {
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(45, 119, 255);
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 16px;
+    margin: 30px auto;
+}
+
+.demo-btn:hover,
+.demo-btn:focus {
+    border-color: rgb(45, 119, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(45, 119, 255);
+}
+
+
+/* CONTACT US */
+
+div.contact {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 0;
+    margin: 50px 150px;
+    border-radius: 4px;
+    background-color: rgba(14, 91, 200, 0.7);
+    color: #fff;
+}
+
+.contact-text {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    margin: 20px auto;
+}
+
+.contact-btn {
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(255, 212, 20);
+    color: rgba(14, 91, 200, 0.85);
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 16px;
+    margin: 30px auto;
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+    border-color: rgb(255, 212, 20);
+    background-color: rgba(14, 91, 200, 0.85);
+    color: rgb(255, 212, 20);
+}
+
+
+
+/* SUPPORTED BY */
+
+.support-title {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+ul.support-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li.support-item {
+    text-align: center;
+    padding: 40px;
+}
+
+
+
+
+/* FOOTER */
+
+div.footer {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(48, 48, 48);
+    color: #fff;
+}
+
+.store-links {
+    font-size: 50px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.store-link:not(last-child) {
+    margin-right: 25px;
+}
+
+.media-links {
+    font-size: 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.media-link:not(last-child) {
+    margin-right: 25px;
 }
