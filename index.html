@@ -17,44 +17,62 @@
 </head>
 <body>
     <!-- DONATE -->
-    <div class="donate p-2">
+    <div class="donate p-2 fixed-top">
         <p class="donate-text m-0 p-0">We stand with Ukraine. Find out how to support Ukraine <a href="https://u24.gov.ua/" target="_blank" class="donate-link">here</a></p>
     </div>
     <!-- NAVBAR -->
     <div class="header-section mb-5">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg" style="background-color: transparent;">
-                <div class="container-fluid">
-                    <div class="d-flex flex-row align-items-center">
-                        <a class="navbar-brand" href="index.html"><img src="images/logo.png
-                            " class="logo" alt="logo" title="Homepage">
+        <div class="navbar-container">
+            <nav class="navbar navbar-expand-lg m-0 p-0" style="background-color: transparent;">
+                <div class="container-fluid p-0">
+                    <div class="d-flex justify-content-start me-5 p-0">
+                        <a class="navbar-brand d-flex flex-row align-items-center" href="index.html">
+                            <img src="images/logo.png" class="logo me-3" alt="logo" title="Homepage">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                        </a>
-                        <a class="navbar-brand" href="index.html">
                             <p class="navbar-title m-0 p-0">UfoCourier</p>
                         </a>
                     </div>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <div class="d-flex justify-content-start p-0">
                         <ul class="navbar-nav">
-                            <li class="nav-item p-0">
-                                <a class="nav-link active" aria-current="page" title="Homepage" href="#index">Homepage</a>
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link shipper-btn" title="Shipper" href="#shipper">Shipper</a>
                             </li>
-                            <li class="nav-item p-0">
-                                <a class="nav-link" title="About" href="#about">About</a>
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link carrier-btn" title="Carrier" href="#carrier">Carrier</a>
                             </li>
-                            <li class="nav-item p-0">
-                                <a class="nav-link" title="Contact" href="#contact">Contact</a>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse d-flex justify-content-end p-0" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link" title="About Us" href="#howitworks">How It Works</a>
                             </li>
-                            <li class="nav-item p-0">
-                                <a class="nav-link" title="Language" href="#language">🌍</a>
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link" title="About Us" href="#about">Our Team</a>
+                            </li>
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <ul class="navbar-lang">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" title="Language" data-bs-toggle="dropdown" href="#language" role="button" aria-expanded="false">
+                                            EN
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">UA</a></li>
+                                            <li><a class="dropdown-item" href="#">PL</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item p-0 d-flex align-items-center">
                                 <a class="nav-link log-btn" title="Log in" href="#login">Log In</a>
                             </li>
                             <li class="nav-item p-0 d-flex align-items-center">
                                 <a class="nav-link sign-btn" title="Sign up" href="#signup">Sign Up</a>
+                            </li>
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link demo-btn" title="Demo Button" href="#demo">Book a Demo</a>
                             </li>
                         </ul>
                     </div>
@@ -72,24 +90,26 @@
             <h2 class="subtitle">Become a Sender or Courier in a few steps</h2>
             <div class="d-flex justify-content-around">
                 <div class="row mt-5 mb-5 p-3">
-                    <div class="col-4">
+                    <div class="col-3">
                         <select class="form-select" aria-label="Default select example">
-                            <option selected="1">Sender 📦</option>
-                            <option value="2">Courier 🚗</option>
-                        </select>
-                    </div>
-                    <div class="col-4">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected="1">Package 📦</option>
-                            <option value="2">Passenger 🚗</option>
-                            <option value="3">Passenger&Package 🚗 📦</option>
+                            <option selected="1">Select Who</option>
+                            <option value="2">Sender</option>
+                            <option value="3">Courier</option>
                         </select>
                     </div>
                     <div class="col-3">
-                        <input type="text" class="form-control" placeholder="From Anywhere" aria-label="Pick-up Location">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected="1">Select What</option>
+                            <option value="2">Package</option>
+                            <option value="3">Passenger</option>
+                            <option value="4">Passenger & Package</option>
+                        </select>
                     </div>
-                    <div class="col-1 search-btn">
-                        <button type="button" class="btn btn-primary">Search</button>
+                    <div class="col-4">
+                        <input type="text" class="form-control" placeholder="Select Pick-up Location" aria-label="Pick-up Location">
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn search-btn">Search</button>
                     </div>
                 </div>    
             </div>
@@ -101,47 +121,84 @@
                 </p>
             </div>
         </div>
+
+
+        <!-- ADVANTAGES & DESCRIPTION -->
+    
+        <div class="advantages-section mt-5 mb-5 d-flex justify-content-around">
+            <div class="row advantages-list">
+                <div class="col advantages-item">
+                    <img class="img-fluid advantages-img" src="images/everyone-courier.png" alt="Everyone is a Courier">
+                    <h4 class="advantages-title mt-3 mb-3">Everyone is a Courier</h4>
+                    <p class="advantages-desc m-0">delivery company, private driver or just a traveler</p>
+                </div>
+                <div class="col advantages-item">
+                    <img class="img-fluid advantages-img" src="images/passengers-sender.png" alt="Everyone is a Courier">
+                    <h4 class="advantages-title mt-3 mb-3">Stay Connected</h4>
+                    <p class="advantages-desc m-0">bring the people you love into your life abroad by sending them a meaningful package</p>
+                </div>
+                <div class="col advantages-item">
+                    <img class="img-fluid advantages-img" src="images/remote-places.png" alt="To the remote places">
+                    <h4 class="advantages-title mt-3 mb-3">Easy Search</h4>
+                    <p class="advantages-desc m-0">booking and communication between shipper and carrier</p>
+                </div>
+            </div>
+        </div>
     </div>
     
 
 
-    <!-- ADVANTAGES & DESCRIPTION -->
+    <!-- SHIPPER & CARRIER -->
 
-    <div class="advantages-section mt-5 mb-5 d-flex justify-content-around">
-        <ul class="advantages-list d-flex align-items-center">
-            <li class="advantages-item">
-                <h3 class="advantages-img">💰</h3>
-                <h4 class="advantages-title mt-3 mb-3">Save money</h4>
-                <p class="advantages-desc m-0">add your package to the others in truck</p>
-            </li>
-            <li class="advantages-item">
-                <h3 class="advantages-img">🌍</h3>
-                <h4 class="advantages-title mt-3 mb-3">Ecological shipment</h4>
-                <p class="advantages-desc m-0">more fully-loaded trucks means less greenhouse gas emissions</p>
-            </li>
-            <li class="advantages-item">
-                <h3 class="advantages-img">🙋🏻</h3>
-                <h4 class="advantages-title mt-3 mb-3">Everyone is a Courier</h4>
-                <p class="advantages-desc m-0">delivery company, private driver or just a traveler</p>
-            </li>
-            <li class="advantages-item">
-                <h3 class="advantages-img">🚚</h3>
-                <h4 class="advantages-title mt-3 mb-3">To the remote place</h4>
-                <p class="advantages-desc m-0">even if the place is undeveloped or disrupted by war and natural disasters</p>
-            </li>
-        </ul>
-    </div>
-
-
-    <!-- DESKTOP & MOBILE VIEW -->
-
-    <div class="view-section d-flex justify-content-around">
+    <div class="view-section d-flex justify-content-around mt-5 mb-5">
         <div class="row">
-            <div class="laptop-icon col-8">
-                <i class="fa-solid fa-laptop"></i>
+            <div class="shipper-container col me-5">
+                <img class="img-fluid rounded shipper-img" src="images/shipper.png" alt="Shipper">
+                <div class="overlay">
+                    <div class="list">
+                        <h4 class="shipper-title mb-5">Shipper</h4>
+                        <ul class="shipper-item">
+                            <li class="text-start">
+                                Bidding system
+                            </li>
+                            <br/>
+                            <li class="text-start">
+                                Easy search and booking
+                            </li>
+                            <br/>
+                            <li class="text-start">
+                                Search among verified and rated carriers
+                            </li>
+                        </ul>
+                        <button type="button" class="btn shipper-btn mt-3">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="mobile-icon col-4">
-                <i class="fa-solid fa-mobile-screen-button"></i>
+            <div class="carrier-container col">
+                <img class="img-fluid rounded carrier-img" src="images/carrier.png" alt="Carrier">
+                <div class="overlay">
+                    <div class="list">
+                        <h4 class="carrier-title mb-5">Carrier</h4>
+                        <ul class="carrier-item">
+                            <li class="text-start">
+                                Quick access to potential customers all over the Europe
+                            </li>
+                            <br/>
+                            <li class="text-start">
+                                Easy communication with customers
+                            </li>
+                            <br/>
+                            <li class="text-start">
+                                Smart and easy management system
+                            </li>
+                        </ul>
+                        <button type="button" class="btn carrier-btn mt-3">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -150,14 +207,13 @@
 
     <!-- BOOK A DEMO -->
 
-    <div class="text-center">
-        <h3 class="demo-title mt-5 mb-5 p-0">HOW IT WORKS</h3>
-    </div>
-
     <div class="container">
+        <div class="text-center">
+            <h3 class="demo-title mt-5 mb-5 p-0" id="howitworks">HOW IT WORKS</h3>
+        </div>
         <div class="row align-items-center mb-5">
             <div class="col-md-6 project-description button">
-                <p class="text-muted">
+                <p class="demo-text">
                     As someone who wants to book a trip or send a package, you can search trips according to your criteria.
                     <br/>
                     <br/>
@@ -183,7 +239,7 @@
                 <img src="images/screen2.png" class="img-fluid rounded" alt="screen">
             </div>
             <div class="col-md-6 project-description button">
-                <p class="text-muted">
+                <p class="demo-text">
                     At UfoCourier any driver can offer a ride, for passengers, packages and both at the same time.
                     <br/>
                     <br/>
@@ -203,7 +259,326 @@
     </div>
 
 
-    <!-- CONTACT US -->
+    <!-- ABOUT US - NAVBAR -->
+
+    <div class="member-section p-3 ms-5 me-5" id="about">
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link contact-nav active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Team</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link contact-nav" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Mentors</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link contact-nav" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Advisors</button>
+            </li>
+        </ul>
+    </div>
+
+        <!-- CONTACT US - TEAM -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div class="container">
+                    <div class="text-center">
+                        <h3 class="contact-title mt-5 p-0">UfoCourier Team</h3>
+                        <p class="contact-text mt-3 mb-5">This is us: A strong, interdisciplinary team with several years of professional project experience.</p>
+                    </div>
+                    <div class="row text-center align-items-center mb-5">
+                        <div class="col-md-6 d-lg-block p-0">
+                            <img src="images/oksana.jpg" class="img-fluid rounded team-img" alt="Oksana">
+                        </div>
+                        <div class="col-md-6 p-0 project-description button">
+                            <div class="text-start">
+                                <h4>Oksana Sawicka (CEO, Co-Founder)</h4>
+                                <p class="team-text">
+                                    Int. Business and Economics (M.A.)
+                                    <br/>
+                                    <br/>
+                                    Oksana Sawicka received her Bachelor's degree in International Relations in Bielsko-Biala, Poland. Later she did her Master Degree in International Business and Economics...
+                                </p>
+                            
+                                <!-- MODAL BTN -->
+                                <button type="button" class="btn modal-btn me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Learn more
+                                </button>
+                                <button type="button" class="btn modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal6" data-bs-whatever="oksana.sawicka@ufocourier.com">
+                                    Contact Oksana
+                                </button>
+                            </div>
+
+                            <!-- MODAL -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Oksana Sawicka</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Oksana Sawicka received her Bachelor's degree in International Relations in Bielsko-Biala, Poland. Later she did her Master Degree in International Business and Economics at the University of Applied Sciences in Schmalkalden, Germany.
+                                                <br/>
+                                                <br/>
+                                                She worked for several years for Ingram Micro CFS Eurohub Fulfilment GmbH , initially as an account manager and over time she developed into a project manager with projects in the six-figure range.
+                                                <br/>
+                                                <br/>
+                                                Oksana has a sharp, analytical approach and as a result has often been consulted as a systems analyst.
+                                                <br/>
+                                                <br/>
+                                                Oksana speaks several languages: Ukrainian, Polish, English, German and Russian. During her career she has spent a period of her life in several countries: Ukraine, Poland, USA and now Germany as her home base. She is the Go-To contact person when it comes to learning languages and habits of the respective culture.
+                                            </p>
+                                        </div>
+                                        <!-- <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Contact Oksana</button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CONTACT MODAL -->
+                            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                                    <input type="text" class="form-control" id="recipient-name">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Message:</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row text-center align-items-center mb-5">
+                        <div class="col-md-6 d-lg-block p-0">
+                            <img src="images/pawel.jpg" class="img-fluid rounded team-img" alt="Pawel">
+                        </div>
+                        <div class="col-md-6 p-0 project-description button">
+                            <div class="text-start">
+                                <h4>Pawel Sawicki (CTO, Co-Founder)</h4>
+                                <p class="team-text">
+                                    Computer Science (Dipl.)
+                                    <br/>
+                                    <br/>
+                                    Pawel Sawicki is a passionate software developer, with a special interest in distributed systems and context-sensitive software. As a student he taught himself...
+                                </p>
+
+                                <!-- MODAL BTN -->
+                                <button type="button" class="btn modal-btn me-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                    Learn more
+                                </button>
+                                <button type="button" class="btn modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal6" data-bs-whatever="pawel.sawicki@ufocourier.com">
+                                    Contact Pawel
+                                </button>
+                            </div>
+
+                            <!-- MAIN MODAL -->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Pawel Sawicki</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Pawel Sawicki is a passionate software developer, with a special interest in distributed systems and context-sensitive software.
+                                                <br/>
+                                                <br/>
+                                                As a student he taught himself C and X86 assembler and wrote his first software under Linux. As a student his interest in distributed systems and software engineering was sparked. At this time he could gain his first programming experience as a working student and freelancer.
+                                                <br/>
+                                                <br/>
+                                                Before founding, Pawel has worked as a freelance software developer, consultant and trainer. His portfolio includes projects for the German Bundestag, T-Systems, S-Oliver, Vattenfall, GVL, Hypoport and a large number of companies from the Berlin start-up scene.
+                                            </p>
+                                        </div>
+                                        <!-- <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Contact Pawel</button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CONTACT MODAL -->
+                            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                                    <input type="text" class="form-control" id="recipient-name">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Message:</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+
+                    <div class="row text-center align-items-center mb-5">
+                        <div class="col-md-6 d-lg-block p-0">
+                            <img src="images/nataliia.png" class="img-fluid rounded team-img" alt="Nataliia">
+                        </div>
+                        <div class="col-md-6 p-0 project-description button">
+                            <div class="text-start">
+                                <h4>Nataliia Medvedenko (COO, Co-Founder)</h4>
+                                <p class="team-text">
+                                    Int. Business Management and Economics (M.A.)
+                                    <br/>
+                                    <br/>
+                                    Nataliia Medvedenko, originally from Ukraine and currently living in Germany. Nataliia received a Master’s degree in Management of International Business and International...
+                                </p>
+                                <!-- MODAL BTN -->
+                                <button type="button" class="btn modal-btn me-3" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                    Learn more
+                                </button>
+                                <button type="button" class="btn modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal6" data-bs-whatever="nataliia.medvedenko@ufocourier.com">
+                                    Contact Nataliia
+                                </button>
+                            </div>
+
+                            <!-- MAIN MODAL -->
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Nataliia Medvedenko</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Nataliia Medvedenko, originally from Ukraine and currently living in Germany. Nataliia received a Master’s degree in Management of International Business and International Economics in Kyiv, Ukraine. And has a working experience as a Business and Logistics Specialist.
+                                                <br/>
+                                                <br/>
+                                                Nataliia also has a strong desire to become an IT specialist. She completed Web Development courses to broaden the horizons and apply her knowledge to new creative projects.
+                                                <br/>
+                                                <br/>
+                                                Nataliia is a self-motivated and team-oriented person, who prefer to coordinate the interests of different parts of the system in order to achieve the team’s goals. She also speaks Ukrainian, English, German and Russian languages and in love with different styles of music, enjoy other creative things such as dancing, singing and drawing.
+                                            </p>
+                                        </div>
+                                        <!-- <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Contact Nataliia</button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CONTACT MODAL -->
+                            <div class="modal-footer">
+                                <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="message-text" class="col-form-label">Message:</label>
+                                                        <textarea class="form-control" id="message-text"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Send message</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CONTACT US - MENTORS -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="container p-0">
+                    <div class="row align-items-center mt-5 mb-5">
+                        <div class="col-6">
+                            <h4>Name Surname (CEO, Co-Founder)</h4>
+                            <p class="team-text">
+                                Company Name
+                            </p>
+                            <!-- <img src="images/nataliia.png" class="img-fluid rounded" alt="Nataliia"> -->
+                            <i class="fa-regular fa-user user-img"></i>
+                        </div>
+                        <div class="col-6">
+                            <h4>Name Surname (CEO, Co-Founder)</h4>
+                            <p class="team-text">
+                                Company Name
+                            </p>
+                            <!-- <img src="images/nataliia.png" class="img-fluid rounded" alt="Nataliia">  -->
+                            <i class="fa-regular fa-user user-img"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT US - ADVISORS -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <div class="container p-0">
+                    <div class="row align-items-center mt-5 mb-5">
+                        <div class="col-6">
+                            <h4>Name Surname (CEO, Co-Founder)</h4>
+                            <p class="team-text">
+                                Company Name
+                            </p>
+                            <!-- <img src="images/nataliia.png" class="img-fluid rounded" alt="Nataliia"> -->
+                            <i class="fa-regular fa-user user-img"></i>
+                        </div>
+                        <div class="col-6">
+                            <h4>Name Surname (CEO, Co-Founder)</h4>
+                            <p class="team-text">
+                                Company Name
+                            </p>
+                            <!-- <img src="images/nataliia.png" class="img-fluid rounded" alt="Nataliia">  -->
+                            <i class="fa-regular fa-user user-img"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <div class="contact d-flex justify-content-center">
         <h3 class="mt-4 mb-4 p-0">CONTACT US</h3>
@@ -212,27 +587,41 @@
     </div>
 
 
-
     <!-- SUPPORTED BY -->
 
-    <div class="support-item d-flex justify-content-center">
-        <h3 class="support-title mt-4 mb-0 p-0">SUPPORTED BY</h3>
-    </div>
-    <div class="support-item mt-5 mb-5 d-flex justify-content-around">
-        <ul class="support-list d-flex align-items-center">
-            <li class="support-item me-3">
-                <img class="support-img img-fluid" src="images/europäische-union.jpeg" alt="Europäische Union">
-            </li>
-            <li class="support-item me-3">
-                <img class="support-img img-fluid" src="images/esf-berlin.jpeg" alt="ESF Berlin">
-            </li>
-            <li class="support-item me-3">
-                <img class="support-img img-fluid" src="images/senatsverwaltung.jpeg" alt="Senatsverwaltung">
-            </li>
-            <li class="support-item">
-                <img class="support-img img-fluid" src="images/sibb.png" alt="SIBB">
-            </li>
-        </ul>
+    <div class="container">
+        <div class="support-item d-flex justify-content-center">
+            <h3 class="support-title mt-4 mb-0 p-0">SUPPORTED BY</h3>
+        </div>
+        <div class="support-item mt-5 mb-5 d-flex justify-content-around">
+            <ul class="support-list d-flex align-items-center">
+                <li class="support-item me-5">
+                    <a class="support-link" href="https://www.esf.de/portal/DE/Startseite/inhalt.html">
+                        <img class="support-img img-fluid" src="images/europäische-union.jpeg" alt="Europäische Union">
+                    </a>
+                </li>
+                <li class="support-item me-5">
+                    <a class="support-link" href="https://www.berlin.de/sen/wirtschaft/gruenden-und-foerdern/europaeische-strukturfonds/esf/">
+                        <img class="support-img img-fluid" src="images/esf-berlin.jpeg" alt="ESF Berlin">
+                    </a>
+                </li>
+                <li class="support-item me-5">
+                    <a class="support-link" href="https://www.berlin.de/sen/web/">
+                        <img class="support-img img-fluid" src="images/senatsverwaltung.jpeg" alt="Senatsverwaltung">
+                    </a>
+                </li>
+                <li class="support-item me-5">
+                    <a class="support-link" href="https://www.sibb.de/scholarship">
+                        <img class="support-img img-fluid" src="images/sibb.png" alt="SIBB">
+                    </a>
+                </li>
+                <li class="support-item">
+                    <a class="support-link" href="https://startupwiseguys.com/">
+                        <img class="support-img img-fluid" src="images/startupwiseguys.png" alt="Startupwiseguys">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 
 
@@ -260,6 +649,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 <script>
+    // SCROLL TOP BTN
     let mybutton = document.getElementById("myBtn");
 
     window.onscroll = function() {scrollFunction()};
@@ -276,6 +666,34 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
+
+
+    // MODAL WINDOW BTN
+    const myModal = document.getElementById('myModal')
+    const myInput = document.getElementById('myInput')
+
+    // myModal.addEventListener('shown.bs.modal', () => {
+    //     myInput.focus()
+    // })
+
+
+    // EMAIL CONTACT BTN
+    const exampleModal = document.getElementById('exampleModal') // change id
+    exampleModal.addEventListener('show.bs.modal', event => {
+        // Button that triggered the modal
+        const button = event.relatedTarget
+        // Extract info from data-bs-* attributes
+        const recipient = button.getAttribute('data-bs-whatever')
+        // If necessary, you could initiate an AJAX request here
+        // and then do the updating in a callback.
+        //
+        // Update the modal's content.
+        const modalTitle = exampleModal.querySelector('.modal-title')
+        const modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+        modalTitle.textContent = `New message to ${recipient}`
+        modalBodyInput.value = recipient
+    })
 </script>
 
 </html>
