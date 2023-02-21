@@ -17,38 +17,53 @@
 </head>
 <body>
     <!-- DONATE -->
-    <div class="donate p-2">
+    <div class="donate p-2 fixed-top">
         <p class="donate-text m-0 p-0">We stand with Ukraine. Find out how to support Ukraine <a href="https://u24.gov.ua/" target="_blank" class="donate-link">here</a></p>
     </div>
     <!-- NAVBAR -->
-    <div class="about-section mb-5">
-        <div class="container about-container">
-            <nav class="navbar navbar-expand-lg" style="background-color: transparent;">
-                <div class="container-fluid">
-                    <div class="d-flex flex-row align-items-center">
-                        <a class="navbar-brand" href="index.html"><img src="images/logo.png
-                            " class="logo" alt="logo" title="Homepage">
+    <div class="about-header mb-5">
+        <div class="navbar-container">
+            <nav class="navbar navbar-expand-lg m-0 p-0" style="background-color: transparent;">
+                <div class="container-fluid p-0">
+                    <div class="d-flex justify-content-start me-5 p-0">
+                        <a class="navbar-brand d-flex flex-row align-items-center" href="index.html">
+                            <img src="images/logo.png" class="logo me-3" alt="logo" title="Homepage">
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                        </a>
-                        <a class="navbar-brand" href="index.html">
                             <p class="navbar-title m-0 p-0">UfoCourier</p>
                         </a>
                     </div>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <div class="d-flex justify-content-start p-0">
                         <ul class="navbar-nav">
-                            <!-- <li class="nav-item p-0">
-                                <a class="nav-link" aria-current="page" title="Homepage" href="index.html">Homepage</a>
-                            </li> -->
-                            <li class="nav-item p-0">
-                                <a class="nav-link active" title="About Us" href="about.html">About Us</a>
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link shipper-btn" title="Shipper" href="#shipper">Shipper</a>
                             </li>
-                            <li class="nav-item p-0">
-                                <a class="nav-link" title="Contact" href="#contact">Contact</a>
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link carrier-btn" title="Carrier" href="#carrier">Carrier</a>
                             </li>
-                            <li class="nav-item p-0">
-                                <a class="nav-link" title="Language" href="#language">🌍</a>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse d-flex justify-content-end p-0" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link" title="About Us" href="#howitworks">How It Works</a>
+                            </li>
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link active-link" title="About Us" href="about.html">Our Team</a>
+                            </li>
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <ul class="navbar-lang">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" title="Language" data-bs-toggle="dropdown" href="#language" role="button" aria-expanded="false">
+                                            EN
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">UA</a></li>
+                                            <li><a class="dropdown-item" href="#">PL</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item p-0 d-flex align-items-center">
                                 <a class="nav-link log-btn" title="Log in" href="#login">Log In</a>
@@ -56,77 +71,385 @@
                             <li class="nav-item p-0 d-flex align-items-center">
                                 <a class="nav-link sign-btn" title="Sign up" href="#signup">Sign Up</a>
                             </li>
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link about-demo-btn" title="Demo Button" href="#demo">Book a Demo</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
+    </div>
 
         <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
 
-    <!-- ABOUT US -->
 
-    <div class="container">
-        <div class="text-center">
-            <h3 class="team-title mt-5 p-0">UfoCourier Team</h3>
-            <p class="team-text mt-3 mb-5">This is us: A strong, interdisciplinary team with several years of professional project experience.</p>
-        </div>
-        <div class="row align-items-center mb-5">
-            <div class="col-md-6 project-description button">
-                <h4>Oksana Sawicka (CEO, Co-Founder)</h4>
-                <p class="team-text">
-                    Oksana Sawicka received her Bachelor's degree in International Relations in Bielsko-Biala, Poland. Later she did her Master Degree in International Business and Economics at the University of Applied Sciences in Schmalkalden, Germany.
-                    <br/>
-                    <br/>
-                    She worked for several years for Ingram Micro CFS Eurohub Fulfilment GmbH , initially as an account manager and over time she developed into a project manager with projects in the six-figure range.
-                    <br/>
-                    <br/>
-                    Oksana has a sharp, analytical approach and as a result has often been consulted as a systems analyst.
-                    <br/>
-                    <br/>
-                    Oksana speaks several languages: Ukrainian, Polish, English, German and Russian. During her career she has spent a period of her life in several countries: Ukraine, Poland, USA and now Germany as her home base. She is the Go-To contact person when it comes to learning languages and habits of the respective culture.
-                </p>
+        <!-- HERO SECTION -->
+    
+        <!-- <div class="container header-container mb-5">
+            <h1 class="title">Your Delivery is our Mission</h1>
+            <h2 class="subtitle">Become a Sender or Courier in a few steps</h2>
+            <div class="d-flex justify-content-around">
+                <div class="row mt-5 mb-5 p-3">
+                    <div class="col-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected="1">Select Who</option>
+                            <option value="2">Sender</option>
+                            <option value="3">Courier</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected="1">Select What</option>
+                            <option value="2">Package</option>
+                            <option value="3">Passenger</option>
+                            <option value="4">Passenger & Package</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" placeholder="Select Pick-up Location" aria-label="Pick-up Location">
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn search-btn">Search</button>
+                    </div>
+                </div>    
             </div>
-            <div class="col-md-6 d-lg-block">
-                <img src="images/oksana.jpg" class="img-fluid rounded" alt="Oksana">
-            </div>
-        </div>
-
-        <div class="row align-items-center mb-5">
-            <div class="col-md-6 d-lg-block">
-                <img src="images/pawel.jpg" class="img-fluid rounded" alt="Pawel">
-            </div>
-            <div class="col-md-6 project-description button">
-                <h4>Pawel Sawicki (CTO, Co-Founder)</h4>
-                <p class="team-text">
-                    Pawel Sawicki is a passionate software developer, with a special interest in distributed systems and context-sensitive software.
-                    <br/>
-                    <br/>
-                    As a student he taught himself C and X86 assembler and wrote his first software under Linux. As a student his interest in distributed systems and software engineering was sparked. At this time he could gain his first programming experience as a working student and freelancer.
-                    <br/>
-                    <br/>
-                    Before founding, Pawel has worked as a freelance software developer, consultant and trainer. His portfolio includes projects for the German Bundestag, T-Systems, S-Oliver, Vattenfall, GVL, Hypoport and a large number of companies from the Berlin start-up scene.
+        </div> -->
+        <div class="d-flex justify-content-around mt-5 mb-5">
+            <div class="desc-section ms-5 me-5">
+                <p class="desc-text">
+                    <span style="font-weight: 700;">“UfoCourier”</span> – is a platform that connects minorities living abroad with small delivery partners offering faster and more cost-effective cross-border shipment in comparison to traditional carriers.
                 </p>
             </div>
         </div>
 
-        <div class="row align-items-center mb-5">
-            <div class="col-md-6 project-description button">
-                <h4>Nataliia Medvedenko (COO, Co-Founder)</h4>
-                <p class="team-text">
-                    Nataliia Medvedenko, originally from Ukraine and currently living in Germany. Nataliia received a Master’s degree in Management of International Business and International Economics in Kyiv, Ukraine. And has a working experience as a Business and Logistics Specialist.
-                    <br/>
-                    <br/>
-                    Nataliia also has a strong desire to become an IT specialist. She completed Web Development courses to broaden the horizons and apply her knowledge to new creative projects.
-                    <br/>
-                    <br/>
-                    Nataliia is a self-motivated and team-oriented person, who prefer to coordinate the interests of different parts of the system in order to achieve the team’s goals. She also speaks Ukrainian, English, German and Russian languages and in love with different styles of music, enjoy other creative things such as dancing, singing and drawing.
-                </p>
-            </div>
-            <div class="col-md-6 d-lg-block">
-                <img src="images/nataliia.png" class="img-fluid rounded" alt="Nataliia">
+
+
+    <!-- ABOUT US - NAVBAR -->
+
+    <div class="member-section p-3 ms-5 me-5" id="about">
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link contact-nav active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Team</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link contact-nav" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Mentors</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link contact-nav" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Advisors</button>
+            </li>
+        </ul>
+    </div>
+
+        <!-- CONTACT US - TEAM -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div class="container">
+                    <div class="text-center">
+                        <h3 class="contact-title mt-5 p-0">UfoCourier Team</h3>
+                        <p class="contact-text mt-3 mb-5">This is us: A strong, interdisciplinary team with several years of professional project experience.</p>
+                    </div>
+                    <div class="row text-center align-items-center mb-5">
+                        <div class="col-md-6 d-lg-block p-0">
+                            <img src="images/oksana.jpg" class="img-fluid rounded team-img" alt="Oksana">
+                        </div>
+                        <div class="col-md-6 p-0 project-description button">
+                            <div class="text-start">
+                                <h4>Oksana Sawicka (CEO, Co-Founder)</h4>
+                                <p class="team-text">
+                                    Int. Business and Economics (M.A.)
+                                    <br/>
+                                    <br/>
+                                    Oksana Sawicka received her Bachelor's degree in International Relations in Bielsko-Biala, Poland. Later she did her Master Degree in International Business and Economics...
+                                </p>
+                            
+                                <!-- MODAL BTN -->
+                                <button type="button" class="btn modal-btn me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Learn more
+                                </button>
+                                <button type="button" class="btn modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal6" data-bs-whatever="oksana.sawicka@ufocourier.com">
+                                    Contact Oksana
+                                </button>
+                            </div>
+
+                            <!-- MODAL -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Oksana Sawicka</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Oksana Sawicka received her Bachelor's degree in International Relations in Bielsko-Biala, Poland. Later she did her Master Degree in International Business and Economics at the University of Applied Sciences in Schmalkalden, Germany.
+                                                <br/>
+                                                <br/>
+                                                She worked for several years for Ingram Micro CFS Eurohub Fulfilment GmbH , initially as an account manager and over time she developed into a project manager with projects in the six-figure range.
+                                                <br/>
+                                                <br/>
+                                                Oksana has a sharp, analytical approach and as a result has often been consulted as a systems analyst.
+                                                <br/>
+                                                <br/>
+                                                Oksana speaks several languages: Ukrainian, Polish, English, German and Russian. During her career she has spent a period of her life in several countries: Ukraine, Poland, USA and now Germany as her home base. She is the Go-To contact person when it comes to learning languages and habits of the respective culture.
+                                            </p>
+                                        </div>
+                                        <!-- <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Contact Oksana</button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CONTACT MODAL -->
+                            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                                    <input type="text" class="form-control" id="recipient-name">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Message:</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row text-center align-items-center mb-5">
+                        <div class="col-md-6 d-lg-block p-0">
+                            <img src="images/pawel.jpg" class="img-fluid rounded team-img" alt="Pawel">
+                        </div>
+                        <div class="col-md-6 p-0 project-description button">
+                            <div class="text-start">
+                                <h4>Pawel Sawicki (CTO, Co-Founder)</h4>
+                                <p class="team-text">
+                                    Computer Science (Dipl.)
+                                    <br/>
+                                    <br/>
+                                    Pawel Sawicki is a passionate software developer, with a special interest in distributed systems and context-sensitive software. As a student he taught himself...
+                                </p>
+
+                                <!-- MODAL BTN -->
+                                <button type="button" class="btn modal-btn me-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                    Learn more
+                                </button>
+                                <button type="button" class="btn modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal6" data-bs-whatever="pawel.sawicki@ufocourier.com">
+                                    Contact Pawel
+                                </button>
+                            </div>
+
+                            <!-- MAIN MODAL -->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Pawel Sawicki</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Pawel Sawicki is a passionate software developer, with a special interest in distributed systems and context-sensitive software.
+                                                <br/>
+                                                <br/>
+                                                As a student he taught himself C and X86 assembler and wrote his first software under Linux. As a student his interest in distributed systems and software engineering was sparked. At this time he could gain his first programming experience as a working student and freelancer.
+                                                <br/>
+                                                <br/>
+                                                Before founding, Pawel has worked as a freelance software developer, consultant and trainer. His portfolio includes projects for the German Bundestag, T-Systems, S-Oliver, Vattenfall, GVL, Hypoport and a large number of companies from the Berlin start-up scene.
+                                            </p>
+                                        </div>
+                                        <!-- <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Contact Pawel</button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CONTACT MODAL -->
+                            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                                    <input type="text" class="form-control" id="recipient-name">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message-text" class="col-form-label">Message:</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+
+                    <div class="row text-center align-items-center mb-5">
+                        <div class="col-md-6 d-lg-block p-0">
+                            <img src="images/nataliia.png" class="img-fluid rounded team-img" alt="Nataliia">
+                        </div>
+                        <div class="col-md-6 p-0 project-description button">
+                            <div class="text-start">
+                                <h4>Nataliia Medvedenko (COO, Co-Founder)</h4>
+                                <p class="team-text">
+                                    Int. Business Management and Economics (M.A.)
+                                    <br/>
+                                    <br/>
+                                    Nataliia Medvedenko, originally from Ukraine and currently living in Germany. Nataliia received a Master’s degree in Management of International Business and International...
+                                </p>
+                                <!-- MODAL BTN -->
+                                <button type="button" class="btn modal-btn me-3" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                    Learn more
+                                </button>
+                                <button type="button" class="btn modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal6" data-bs-whatever="nataliia.medvedenko@ufocourier.com">
+                                    Contact Nataliia
+                                </button>
+                            </div>
+
+                            <!-- MAIN MODAL -->
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Nataliia Medvedenko</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Nataliia Medvedenko, originally from Ukraine and currently living in Germany. Nataliia received a Master’s degree in Management of International Business and International Economics in Kyiv, Ukraine. And has a working experience as a Business and Logistics Specialist.
+                                                <br/>
+                                                <br/>
+                                                Nataliia also has a strong desire to become an IT specialist. She completed Web Development courses to broaden the horizons and apply her knowledge to new creative projects.
+                                                <br/>
+                                                <br/>
+                                                Nataliia is a self-motivated and team-oriented person, who prefer to coordinate the interests of different parts of the system in order to achieve the team’s goals. She also speaks Ukrainian, English, German and Russian languages and in love with different styles of music, enjoy other creative things such as dancing, singing and drawing.
+                                            </p>
+                                        </div>
+                                        <!-- <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Contact Nataliia</button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CONTACT MODAL -->
+                            <div class="modal-footer">
+                                <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="message-text" class="col-form-label">Message:</label>
+                                                        <textarea class="form-control" id="message-text"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Send message</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>      
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+
+        <!-- CONTACT US - MENTORS -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="container p-0">
+                    <div class="row align-items-center mt-5 mb-5">
+                        <div class="col-6">
+                            <h4>Name Surname (CEO, Co-Founder)</h4>
+                            <p class="team-text">
+                                Company Name
+                            </p>
+                            <!-- <img src="images/nataliia.png" class="img-fluid rounded" alt="Nataliia"> -->
+                            <i class="fa-regular fa-user user-img"></i>
+                        </div>
+                        <div class="col-6">
+                            <h4>Name Surname (CEO, Co-Founder)</h4>
+                            <p class="team-text">
+                                Company Name
+                            </p>
+                            <!-- <img src="images/nataliia.png" class="img-fluid rounded" alt="Nataliia">  -->
+                            <i class="fa-regular fa-user user-img"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT US - ADVISORS -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <div class="container p-0">
+                    <div class="row align-items-center mt-5 mb-5">
+                        <div class="col-6">
+                            <h4>Name Surname (CEO, Co-Founder)</h4>
+                            <p class="team-text">
+                                Company Name
+                            </p>
+                            <!-- <img src="images/nataliia.png" class="img-fluid rounded" alt="Nataliia"> -->
+                            <i class="fa-regular fa-user user-img"></i>
+                        </div>
+                        <div class="col-6">
+                            <h4>Name Surname (CEO, Co-Founder)</h4>
+                            <p class="team-text">
+                                Company Name
+                            </p>
+                            <!-- <img src="images/nataliia.png" class="img-fluid rounded" alt="Nataliia">  -->
+                            <i class="fa-regular fa-user user-img"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="contact d-flex justify-content-center">
+        <h3 class="mt-4 mb-4 p-0">CONTACT US</h3>
+        <p class="contact-text">Let’s talk to see how we can automate your freight and help your business grow faster – together.</p>
+        <button type="button" class="contact-btn">CONTACT US</button>
     </div>
 </body>
 

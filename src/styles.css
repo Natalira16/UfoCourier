@@ -103,6 +103,11 @@ a.nav-link:focus {
     color: var(--main-orange);
 }
 
+a.active-link {
+    border-bottom: 1px solid;
+    border-color: var(--main-orange);
+}
+
 a.shipper-btn,
 a.carrier-btn {
     text-decoration: none;
@@ -141,6 +146,26 @@ a.demo-btn {
 
 a.demo-btn:hover,
 a.demo-btn:focus {
+    border-color: var(--main-orange);
+    background-color: var(--main-orange);
+    color: var(--main-white);
+}
+
+a.about-demo-btn {
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    border: 1px solid;
+    border-color: var(--main-orange);
+    border-radius: 4px;
+    background: none;
+    color: var(--main-orange);
+    cursor: pointer;
+    outline: none;
+    padding: 4px 8px;
+}
+
+a.about-demo-btn:hover,
+a.about-demo-btn:focus {
     border-color: var(--main-orange);
     background-color: var(--main-orange);
     color: var(--main-white);
@@ -225,6 +250,12 @@ h2.subtitle {
     height: 100%;
     opacity: 0.4;
     z-index: -10;
+}
+
+.about-header {
+    position: relative;
+    width: 100vw;
+    height: 10vh;
 }
 
 select.form-select {
