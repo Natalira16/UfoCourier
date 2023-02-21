@@ -1,13 +1,16 @@
 :root {
+    --font-family: 'Open Sans', sans-serif;
     --main-color: rgb(14, 91, 200);
     --main-orange: rgb(255, 150, 45);
     --main-black: rgb(0, 0, 0);
     --main-white: rgb(255, 255, 255);
     --main-yellow: rgb(255, 212, 20);
+    --secondary-blue: rgb(122, 171, 255);
+    --footer-grey: rgb(48, 48, 48);
 }
 
 body {
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
 }
 
 h1,
@@ -16,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
 }
 
 a,
@@ -36,13 +39,13 @@ p {
 }
 
 .donate-text {
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
     font-size: 16px;
 }
 
 a.donate-link {
     text-decoration: underline;
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
     color: var(--main-yellow);
 }
 
@@ -55,12 +58,36 @@ a.donate-link:focus {
 
 /* NAVBAR */
 
-.navbar-container {
-    margin: 10px 40px;
+.header-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header-section:before {
+    content: ' ';
+    justify-content: center;
+    display: block;
+    position: absolute;
+    background-image: url("../images/background-sm.jpeg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: -10;
+}
+
+div.navbar-container {
+    margin: 0 auto 10px;
+    padding: 0 40px;
     position: sticky;
-    top: 40px;
+    top: 0;
     z-index: 200;
-    /* background-color: rgba(222, 222, 222, 0.4); */
+    background-color: rgba(222, 222, 222, 0.8);
 }
 
 /* p.navbar-title:hover,
@@ -74,23 +101,23 @@ p.navbar-title:focus {
 }
 
 .logo {
-    max-width: 60px;
+    max-width: 200px;
 }
 
 .navbar-title {
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
     font-size: 16px;
     color: var(--main-color);
 }
 
 li.nav-item:not(:last-child) {
     margin-right: 25px;
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
 }
 
 a.nav-link {
     text-decoration: none;
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
     border: none;
     background: none;
     color: var(--main-color);
@@ -111,7 +138,7 @@ a.active-link {
 a.shipper-btn,
 a.carrier-btn {
     text-decoration: none;
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
     border: 1px solid;
     border-color: var(--main-color);
     border-radius: 4px;
@@ -133,7 +160,7 @@ a.carrier-btn:focus {
 
 a.demo-btn {
     text-decoration: none;
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
     border: 1px solid;
     border-color: var(--main-orange);
     border-radius: 4px;
@@ -153,7 +180,7 @@ a.demo-btn:focus {
 
 a.about-demo-btn {
     text-decoration: none;
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
     border: 1px solid;
     border-color: var(--main-orange);
     border-radius: 4px;
@@ -192,7 +219,7 @@ a.sign-btn:focus {
 
 ul.dropdown-menu {
     text-decoration: none;
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
     border: 1px solid;
     border-color: var(--main-color);
     border-radius: 4px;
@@ -214,48 +241,17 @@ h1.title {
     font-size: 68px;
     margin: 80px auto;
     color: var(--main-color);
-    ;
 }
 
 h2.subtitle {
     font-size: 32px;
     margin: 0 auto 30px;
     color: var(--main-color);
-    ;
 }
 
 .header-container {
     text-align: center;
     position: relative;
-}
-
-.header-section {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-}
-
-.header-section:before {
-    content: ' ';
-    justify-content: center;
-    display: block;
-    position: absolute;
-    background-image: url("../images/background-sm.jpeg");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
-    z-index: -10;
-}
-
-.about-header {
-    position: relative;
-    width: 100vw;
-    height: 10vh;
 }
 
 select.form-select {
@@ -271,7 +267,7 @@ input.form-control {
 button.search-btn {
     text-align: start;
     text-decoration: none;
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
     font-size: 16px;
     line-height: 1.7;
     border: none;
@@ -306,28 +302,16 @@ button.search-btn:focus {
     cursor: pointer;
     padding: 7px 15px 1px;
     border-radius: 4px;
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
 }
 
 #myBtn:hover {
-    background-color: rgb(122, 171, 255);
+    background-color: var(--secondary-blue);
 }
 
 
 
-/* ADVANTAGES & DESCRIPTION */
-
-.desc-section {
-    max-width: 800px;
-    text-align: center;
-    line-height: 46px;
-}
-
-p.desc-text {
-    font-family: 'Merriweather', serif;
-    font-size: 18px;
-    color: var(--main-color);
-}
+/* ADVANTAGES */
 
 div.advantages-list {
     padding: 0;
@@ -356,7 +340,7 @@ img.advantages-img {
 .advantages-desc {
     font-size: 18px;
     font-weight: 300;
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
 }
 
 
@@ -409,7 +393,7 @@ img.carrier-img {
 
 .shipper-title,
 .carrier-title {
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
     font-size: 28px;
     line-height: 2;
     border-bottom: 1px solid;
@@ -419,7 +403,7 @@ img.carrier-img {
 .shipper-item,
 .carrier-item {
     list-style: none;
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
     font-size: 18px;
     line-height: 2;
 }
@@ -427,7 +411,7 @@ img.carrier-img {
 button.shipper-btn,
 button.carrier-btn {
     text-decoration: none;
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
     font-size: 16px;
     line-height: 1.8;
     border: none;
@@ -457,14 +441,14 @@ button.carrier-btn:focus {
 .demo-text {
     font-size: 16px;
     font-weight: 300;
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
 }
 
 .demo-btn {
     text-decoration: none;
     border: 1px solid;
     border-radius: 4px;
-    border-color: rgb(45, 119, 255);
+    border-color: var(--main-color);
     background-color: var(--main-color);
     color: var(--main-white);
     font-size: 28px;
@@ -477,9 +461,193 @@ button.carrier-btn:focus {
 .demo-btn:hover,
 .demo-btn:focus {
     border: 1px solid;
-    border-color: rgb(45, 119, 255);
+    border-color: var(--main-color);
     background-color: var(--main-white);
-    color: rgb(45, 119, 255);
+    color: var(--main-color);
+}
+
+
+
+/* ECOLOGY */
+
+div.ecology {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ecology-icon {
+    color: green;
+    font-size: 48px;
+}
+
+.ecology-title {
+    font-size: 48px;
+}
+
+.ecology-text {
+    font-family: var(--font-family);
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.ecology-numbers {
+    font-size: 60px;
+}
+
+
+/* CATEGORIES */
+
+div.categories {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 0;
+    margin: 50px 150px;
+    border-radius: 4px;
+    background-color: var(--footer-grey);
+    opacity: 0.8;
+    color: var(--main-white);
+}
+
+.categories-item {
+    font-size: 38px;
+}
+
+.categories-item:hover,
+.categories-item:focus {
+    font-size: 58px;
+}
+
+.categories-text {
+    margin: 10px auto 0;
+    font-size: 16px;
+    font-family: var(--font-family);
+}
+
+
+
+/* SUPPORTED BY */
+
+.support-title {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+ul.support-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li.support-item {
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+/* FOOTER */
+
+div.footer {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--footer-grey);
+    color: var(--main-white);
+}
+
+.store-links {
+    font-size: 50px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.store-link:not(last-child) {
+    margin-right: 25px;
+}
+
+.media-links {
+    font-size: 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.media-link:not(last-child) {
+    margin-right: 25px;
+}
+
+
+
+
+/* ABOUT US */
+
+.about-header {
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+}
+
+.about-header:before {
+    content: ' ';
+    justify-content: center;
+    display: block;
+    position: absolute;
+    background-image: url("../images/team-photo.jpg");
+    /* background-color: rgba(222, 222, 222, 0.4); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+.about-container {
+    border-bottom: 1px solid var(--main-color);
+}
+
+div.about-navbar-container {
+    margin: 0 auto 10px;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    background-color: rgba(222, 222, 222, 0.8);
+}
+
+.team-title {
+    font-family: var(--font-family);
+    font-size: 58px;
+}
+
+.team-text {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 2;
+    margin: 20px auto;
+}
+
+/* DESCRIPTION */
+
+.desc-section {
+    /* max-width: 60%; */
+    text-align: center;
+    line-height: 46px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+}
+
+p.desc-text {
+    font-family: var(--font-family);
+    font-size: 24px;
+    color: var(--main-color);
+    padding: 10px 20px;
 }
 
 
@@ -493,17 +661,17 @@ div.contact {
     margin: 50px 150px;
     border-radius: 4px;
     background-color: var(--main-color);
-    color: #fff;
+    color: var(--main-white);
 }
 
 button.contact-nav {
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
     font-size: 18px;
 }
 
 button.modal-btn {
     text-decoration: none;
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
     font-size: 16px;
     border: 1px solid;
     border-color: var(--main-color);
@@ -527,7 +695,7 @@ button.modal-btn:focus {
 }
 
 .contact-text {
-    font-family: 'Merriweather', serif;
+    font-family: var(--font-family);
     font-size: 18px;
     margin: 20px auto;
 }
@@ -560,77 +728,4 @@ img.team-img {
 
 .user-img {
     font-size: 100px;
-}
-
-
-
-/* SUPPORTED BY */
-
-.support-title {
-    font-size: 48px;
-    font-weight: 500;
-}
-
-ul.support-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-li.support-item {
-    text-align: center;
-    padding: 10px;
-}
-
-
-
-
-/* FOOTER */
-
-div.footer {
-    display: inline-flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: rgb(48, 48, 48);
-    color: #fff;
-}
-
-.store-links {
-    font-size: 50px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
-.store-link:not(last-child) {
-    margin-right: 25px;
-}
-
-.media-links {
-    font-size: 30px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
-.media-link:not(last-child) {
-    margin-right: 25px;
-}
-
-
-
-/* ABOUT US */
-
-.about-container {
-    border-bottom: 1px solid var(--main-color);
-}
-
-.team-title {
-    font-family: 'Merriweather', serif;
-    font-size: 58px;
-}
-
-.team-text {
-    font-family: 'Merriweather', serif;
-    font-size: 16px;
-    line-height: 2;
-    margin: 20px auto;
 }
