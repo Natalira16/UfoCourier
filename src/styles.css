@@ -9,8 +9,13 @@
     --footer-grey: rgb(48, 48, 48);
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: var(--font-family);
+    height: 100%;
 }
 
 h1,
@@ -27,6 +32,7 @@ button,
 p {
     transition: all 300ms ease-in-out;
 }
+
 
 
 /* DONATE */
@@ -82,12 +88,12 @@ a.donate-link:focus {
 }
 
 div.navbar-container {
-    margin: 0 auto 10px;
+    margin: 0 auto;
     padding: 0 40px;
     position: sticky;
     top: 0;
     z-index: 200;
-    background-color: rgba(222, 222, 222, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* p.navbar-title:hover,
@@ -165,7 +171,7 @@ a.demo-btn {
     border-color: var(--main-orange);
     border-radius: 4px;
     background: none;
-    color: var(--main-white);
+    color: var(--main-orange);
     cursor: pointer;
     outline: none;
     padding: 4px 8px;
@@ -239,7 +245,7 @@ a.dropdown-item {
 
 h1.title {
     font-size: 68px;
-    margin: 80px auto;
+    margin: 50px auto;
     color: var(--main-color);
 }
 
@@ -254,14 +260,24 @@ h2.subtitle {
     position: relative;
 }
 
-select.form-select {
+/* select.form-select {
     font-size: 16px;
     color: #6f7175;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+button.dropdown-btn {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #6f7175;
+    font-family: var(--font-family);
+    background-color: var(--main-white);
 }
 
 input.form-control {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #6f7175;
+    font-family: var(--font-family);
+    background-color: var(--main-white);
 }
 
 button.search-btn {
@@ -315,7 +331,7 @@ button.search-btn:focus {
 
 div.advantages-list {
     padding: 0;
-    margin: 50px auto;
+    margin: 0 auto 10px;
 }
 
 div.advantages-item {
@@ -334,11 +350,12 @@ img.advantages-img {
 }
 
 .advantages-title {
+    font-size: 22px;
     font-weight: 700;
 }
 
 .advantages-desc {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     font-family: var(--font-family);
 }
@@ -346,6 +363,11 @@ img.advantages-img {
 
 
 /* SHIPPER & CARRIER */
+
+div.view-section {
+    height: 100%;
+    margin: 50px auto;
+}
 
 .shipper-container,
 .carrier-container {
@@ -358,16 +380,18 @@ img.shipper-img,
 img.carrier-img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 90%;
+    border-radius: 4px;
 }
 
 .overlay {
+    border-radius: 4px;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100%;
+    height: 90%;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
@@ -494,7 +518,22 @@ div.ecology {
 
 .ecology-numbers {
     font-size: 60px;
+    color: green;
 }
+
+
+
+/* TESTIMONIAL */
+
+div.testimonial-section {
+    margin: 50px auto;
+}
+
+.carousel-items {
+    text-align: center;
+}
+
+
 
 
 /* CATEGORIES */
@@ -509,6 +548,11 @@ div.categories {
     background-color: var(--footer-grey);
     opacity: 0.8;
     color: var(--main-white);
+}
+
+.categories-title {
+    font-family: var(--font-family);
+    font-size: 48px;
 }
 
 .categories-item {
@@ -575,6 +619,11 @@ div.footer {
     margin-bottom: 16px;
 }
 
+.media-link {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
 .media-link:not(last-child) {
     margin-right: 25px;
 }
@@ -587,7 +636,7 @@ div.footer {
 .about-header {
     position: relative;
     width: 100vw;
-    height: 60vh;
+    height: 90vh;
 }
 
 .about-header:before {
@@ -618,7 +667,7 @@ div.about-navbar-container {
     position: sticky;
     top: 0;
     z-index: 200;
-    background-color: rgba(222, 222, 222, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .team-title {
