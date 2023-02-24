@@ -18,15 +18,6 @@ body {
     height: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--font-family);
-}
-
 a,
 button,
 p {
@@ -45,13 +36,12 @@ p {
 }
 
 .donate-text {
-    font-family: var(--font-family);
     font-size: 16px;
 }
 
 a.donate-link {
     text-decoration: underline;
-    font-family: var(--font-family);
+    /* font-family: var(--font-family); */
     color: var(--main-yellow);
 }
 
@@ -114,20 +104,18 @@ p.navbar-title:focus {
     max-width: 200px;
 }
 
-.navbar-title {
+/* .navbar-title {
     font-family: var(--font-family);
     font-size: 16px;
     color: var(--main-color);
-}
+} */
 
 li.nav-item:not(:last-child) {
     margin-right: 25px;
-    font-family: var(--font-family);
 }
 
 a.nav-link {
     text-decoration: none;
-    font-family: var(--font-family);
     border: none;
     background: none;
     color: var(--main-color);
@@ -148,7 +136,6 @@ a.active-link {
 a.shipper-btn,
 a.carrier-btn {
     text-decoration: none;
-    font-family: var(--font-family);
     border: 1px solid;
     border-color: var(--main-color);
     border-radius: 4px;
@@ -170,7 +157,6 @@ a.carrier-btn:focus {
 
 a.demo-btn {
     text-decoration: none;
-    font-family: var(--font-family);
     border: 1px solid;
     border-color: var(--main-orange);
     border-radius: 4px;
@@ -190,7 +176,6 @@ a.demo-btn:focus {
 
 a.about-demo-btn {
     text-decoration: none;
-    font-family: var(--font-family);
     border: 1px solid;
     border-color: var(--main-orange);
     border-radius: 4px;
@@ -229,7 +214,6 @@ a.sign-btn:focus {
 
 ul.dropdown-menu {
     text-decoration: none;
-    font-family: var(--font-family);
     border: 1px solid;
     border-color: var(--main-color);
     border-radius: 4px;
@@ -273,25 +257,21 @@ h2.subtitle {
 button.dropdown-btn {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: #6f7175;
-    font-family: var(--font-family);
     background-color: var(--main-white);
 }
 
 input.form-control {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: #6f7175;
-    font-family: var(--font-family);
     background-color: var(--main-white);
 }
 
 button.search-btn {
     text-align: start;
     text-decoration: none;
-    font-family: var(--font-family);
     font-size: 16px;
     line-height: 1.7;
     border: none;
-    /* border-color: rgba(238, 238, 238, 0.8); */
     border-radius: 4px;
     background-color: var(--main-color);
     color: var(--main-white);
@@ -322,7 +302,6 @@ button.search-btn:focus {
     cursor: pointer;
     padding: 7px 15px 1px;
     border-radius: 4px;
-    font-family: var(--font-family);
 }
 
 #myBtn:hover {
@@ -357,7 +336,6 @@ div.advantages-item:not(:last-child) {
 .advantages-desc {
     font-size: 16px;
     font-weight: 300;
-    font-family: var(--font-family);
 }
 
 
@@ -417,7 +395,6 @@ img.carrier-img {
 
 .shipper-title,
 .carrier-title {
-    font-family: var(--font-family);
     font-size: 28px;
     line-height: 2;
     border-bottom: 1px solid;
@@ -427,7 +404,6 @@ img.carrier-img {
 .shipper-item,
 .carrier-item {
     list-style: none;
-    font-family: var(--font-family);
     font-size: 18px;
     line-height: 2;
 }
@@ -435,7 +411,6 @@ img.carrier-img {
 button.shipper-btn,
 button.carrier-btn {
     text-decoration: none;
-    font-family: var(--font-family);
     font-size: 16px;
     line-height: 1.8;
     border: none;
@@ -465,7 +440,6 @@ button.carrier-btn:focus {
 .demo-text {
     font-size: 16px;
     font-weight: 300;
-    font-family: var(--font-family);
 }
 
 .demo-btn {
@@ -512,7 +486,6 @@ div.ecology {
 }
 
 .ecology-text {
-    font-family: var(--font-family);
     font-size: 18px;
     margin: 0;
     padding: 0;
@@ -553,7 +526,6 @@ div.categories {
 }
 
 .categories-title {
-    font-family: var(--font-family);
     font-size: 48px;
 }
 
@@ -569,7 +541,6 @@ div.categories {
 .categories-text {
     margin: 10px auto 0;
     font-size: 16px;
-    font-family: var(--font-family);
 }
 
 
@@ -673,12 +644,10 @@ div.about-navbar-container {
 }
 
 .team-title {
-    font-family: var(--font-family);
     font-size: 58px;
 }
 
 .team-text {
-    font-family: var(--font-family);
     font-size: 16px;
     line-height: 2;
     margin: 20px auto;
@@ -695,7 +664,6 @@ div.about-navbar-container {
 }
 
 p.desc-text {
-    font-family: var(--font-family);
     font-size: 24px;
     color: var(--main-color);
     padding: 10px 20px;
@@ -716,13 +684,11 @@ div.contact {
 }
 
 button.contact-nav {
-    font-family: var(--font-family);
     font-size: 18px;
 }
 
 button.modal-btn {
     text-decoration: none;
-    font-family: var(--font-family);
     font-size: 16px;
     border: 1px solid;
     border-color: var(--main-color);
@@ -746,7 +712,6 @@ button.modal-btn:focus {
 }
 
 .contact-text {
-    font-family: var(--font-family);
     font-size: 18px;
     margin: 20px auto;
 }
