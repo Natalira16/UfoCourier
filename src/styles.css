@@ -338,6 +338,11 @@ div.advantages-item:not(:last-child) {
     font-weight: 300;
 }
 
+.advantages-img {
+    width: 280px;
+    height: 280px;
+}
+
 
 
 /* SHIPPER & CARRIER */
@@ -501,7 +506,7 @@ div.ecology {
 /* TESTIMONIAL */
 
 div.testimonial-section {
-    margin: 50px auto;
+    margin: 120px auto;
 }
 
 .carousel-items {
@@ -745,3 +750,35 @@ img.team-img {
 .user-img {
     font-size: 100px;
 }
+
+
+
+/* RESPONSIVE */
+
+/* Large: 992px - 1199px
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+Medium: 768px - 991px
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+Small: 576px - 767px
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+Extra small: 0px (320px) - 575px
+@media (max-width: 575px) {
+    .container {
+        padding: 0 15px;
+    }
+}  */
