@@ -20,7 +20,8 @@
     <div class="body-section m-0 p-0">
         <!-- DONATE -->
         <div class="donate p-2">
-            <p class="donate-text m-0 p-0">We stand with Ukraine. Find out how to support Ukraine <a href="https://u24.gov.ua/" target="_blank" class="donate-link">here</a></p>
+            <p class="donate-text m-0 p-0 d-none d-sm-block">We stand with Ukraine. Find out how to support Ukraine <a href="https://u24.gov.ua/" target="_blank" class="donate-link">here</a></p>
+            <p class="donate-text m-0 p-0 d-block d-sm-none"><a href="https://u24.gov.ua/" target="_blank" class="donate-link">SUPPORT UKRAINE</a></p>
         </div>
 
         <!-- NAVBAR -->
@@ -28,13 +29,14 @@
             <nav class="navbar navbar-expand-xl m-0 p-0">
                 <div class="container-fluid p-0">
                     <a class="navbar-brand d-flex flex-row align-items-center m-0 me-5 p-0" href="index.html">
-                        <img src="images/logo2.png" class="logo m-0 p-0" alt="logo" title="Homepage">
+                        <img src="images/logo2.png" class="d-none d-sm-block logo m-0 p-0" alt="logo" title="Homepage">
+                        <img src="images/logo.png" class="d-block d-sm-none logo logo-small m-0" alt="logo" title="Homepage">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav me-auto mb-lg-0">
                             <li class="nav-item p-0 d-flex align-items-center">
                                 <a class="nav-link shipper-btn" title="Shipper" href="#shipper">Shipper</a>
                             </li>
@@ -43,7 +45,7 @@
                             </li>
                         </ul>
                     
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav ms-auto mb-lg-0">
                             <li class="nav-item p-0 d-flex align-items-center">
                                 <a class="nav-link" title="About Us" href="howitworks.html">How It Works</a>
                             </li>
@@ -86,8 +88,8 @@
                 <h1 class="title">Your Delivery is our Mission</h1>
                 <h2 class="subtitle">Become a Sender or Courier in a few steps</h2>
                 <div class="d-flex justify-content-around mb-5">
-                    <div class="row p-3">
-                        <div class="dropdown col-3">
+                    <div class="row search-section">
+                        <div class="dropdown col search-item">
                             <button class="btn dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Select Who
                             </button>
@@ -96,7 +98,7 @@
                                 <li><a class="dropdown-item" href="#">Courier</a></li>
                             </ul>
                         </div>
-                        <div class="dropdown col-3">
+                        <div class="dropdown col search-item">
                             <button class="btn dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Select What
                             </button>
@@ -106,10 +108,10 @@
                                 <li><a class="dropdown-item" href="#">Passenger & Package</a></li>
                             </ul>
                         </div>
-                        <div class="col-4">
-                            <input type="text" class="form-control" placeholder="Select Location" aria-label="Pick-up Location">
+                        <div class="col search-item">
+                            <input type="text" class="form-control" style="text-align:center;" placeholder="Select Location" aria-label="Pick-up Location">
                         </div>
-                        <div class="col-2">
+                        <div class="col search-item">
                             <button type="button" class="btn search-btn">Search</button>
                         </div>
                     </div>    
@@ -120,12 +122,12 @@
 
             <div class="advantages-section d-flex justify-content-around">
                 <div class="row advantages-list">
-                    <div class="col advantages-item">
+                    <div class="col advantages-item me-sm-4">
                         <img class="img-fluid rounded advantages-img" src="images/courier.svg" alt="Everyone is a Courier">
                         <h4 class="advantages-title mt-3 mb-3">Everyone is a Courier</h4>
                         <p class="advantages-desc m-0">delivery company, private driver or just a traveler</p>
                     </div>
-                    <div class="col advantages-item">
+                    <div class="col advantages-item me-sm-4">
                         <img class="img-fluid rounded advantages-img" src="images/passengers.svg" alt="Passengers-Sender">
                         <h4 class="advantages-title mt-3 mb-3">Stay Connected</h4>
                         <p class="advantages-desc m-0">bring the people you love into your life abroad by sending them a meaningful package</p>

@@ -104,15 +104,16 @@ p.navbar-title:focus {
     max-width: 200px;
 }
 
+.logo-small {
+    max-width: 60px;
+    padding: 10px 0;
+}
+
 /* .navbar-title {
     font-family: var(--font-family);
     font-size: 16px;
     color: var(--main-color);
 } */
-
-li.nav-item:not(:last-child) {
-    margin-right: 25px;
-}
 
 a.nav-link {
     text-decoration: none;
@@ -322,10 +323,6 @@ div.advantages-item {
     padding: 0;
     max-width: 300px;
     max-height: auto;
-}
-
-div.advantages-item:not(:last-child) {
-    margin-right: 100px;
 }
 
 .advantages-title {
@@ -755,30 +752,76 @@ img.team-img {
 
 /* RESPONSIVE */
 
-/* Large: 992px - 1199px
-@media (max-width: 1199px) {
-    .container {
-        max-width: 960px;
+/* X-Large: 1200px - 1399px */
+@media (max-width: 1399.999px) {
+    li.nav-item:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    /* div.advantages-item:not(:last-child) {
+        margin-right: 100px;
+    } */
+}
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199.999px) {
+    li.nav-item {
+        margin: 10px 0px;
     }
 }
 
-Medium: 768px - 991px
-@media (max-width: 991px) {
-    .container {
-        max-width: 720px;
+/* Medium: 768px - 991px */
+@media (max-width: 991.999px) {}
+
+/* Small: 576px - 767px */
+@media (max-width: 767.999px) {
+    a.donate-link {
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    h1.title {
+        font-size: 48px;
+    }
+
+    h2.subtitle {
+        font-size: 18px;
+    }
+
+    .search-section {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    .search-item:not(:last-child) {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+        padding: 0;
+    }
+
+    .advantages-list {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    div.advantages-item {
+        margin: 0;
     }
 }
 
-Small: 576px - 767px
-@media (max-width: 767px) {
-    .container {
-        max-width: 540px;
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575.999px) {
+    h1.title {
+        font-size: 48px;
+        margin: 30px 20px;
+    }
+
+    h2.subtitle {
+        font-size: 18px;
+        margin: 0 10px 15px;
     }
 }
-
-Extra small: 0px (320px) - 575px
-@media (max-width: 575px) {
-    .container {
-        padding: 0 15px;
-    }
-}  */
