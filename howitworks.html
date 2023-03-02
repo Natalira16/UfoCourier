@@ -20,21 +20,24 @@
     <div class="body-section m-0 p-0">
         <!-- DONATE -->
         <div class="donate p-2">
-            <p class="donate-text m-0 p-0">We stand with Ukraine. Find out how to support Ukraine <a href="https://u24.gov.ua/" target="_blank" class="donate-link">here</a></p>
+            <p class="donate-text m-0 p-0 d-none d-sm-block">We stand with Ukraine. Find out how to support Ukraine <a href="https://u24.gov.ua/" target="_blank" class="donate-link">here</a></p>
+            <p class="donate-text m-0 p-0 d-block d-sm-none"><a href="https://u24.gov.ua/" target="_blank" class="donate-link">SUPPORT UKRAINE</a></p>
         </div>
+        
         <!-- NAVBAR -->
         <div class="howitworks-header mb-5">
-            <div class="navbar-container fixed-top">
+            <div class="navbar-container howitworks-container fixed-top">
                 <nav class="navbar navbar-expand-xl m-0 p-0">
                     <div class="container-fluid p-0">
                         <a class="navbar-brand d-flex flex-row align-items-center m-0 me-5 p-0" href="index.html">
-                            <img src="images/logo2.png" class="logo m-0 p-0" alt="logo" title="Homepage">
+                            <img src="images/logo2.png" class="d-none d-sm-block logo m-0 p-0" alt="logo" title="Homepage">
+                            <img src="images/logo.png" class="d-block d-sm-none logo logo-small m-0" alt="logo" title="Homepage">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <ul class="navbar-nav me-auto mb-lg-0">
                                 <li class="nav-item p-0 d-flex align-items-center">
                                     <a class="nav-link shipper-btn" title="Shipper" href="index.html#shipper">Shipper</a>
                                 </li>
@@ -42,8 +45,7 @@
                                     <a class="nav-link carrier-btn" title="Carrier" href="index.html#carrier">Carrier</a>
                                 </li>
                             </ul>
-                        
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <ul class="navbar-nav ms-auto mb-lg-0">
                                 <li class="nav-item p-0 d-flex align-items-center">
                                     <a class="nav-link active-link" title="About Us" href="#">How It Works</a>
                                 </li>
@@ -76,11 +78,9 @@
                         </div>  
                     </div>
                 </nav>
-            </div>
-        </div>
-    
+            </div>  
+
             <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
-    
         </div>
     </div>
 
@@ -144,27 +144,27 @@
     <!-- SUPPORTED BY -->
 
     <div class="container">
-        <div class="support-item d-flex justify-content-center">
-            <h3 class="support-title mt-4 mb-0 p-0">SUPPORTED BY</h3>
+        <div class="support-item m-0 d-flex justify-content-center">
+            <h3 class="support-title p-0">SUPPORTED BY</h3>
         </div>
-        <div class="support-item mt-5 mb-5 d-flex justify-content-around">
+        <div class="support-item d-flex justify-content-around">
             <ul class="support-list d-flex align-items-center">
-                <li class="support-item me-5">
+                <li class="support-item">
                     <a class="support-link" href="https://www.esf.de/portal/DE/Startseite/inhalt.html" target="_blank">
                         <img class="support-img img-fluid" src="images/europäische-union.jpeg" alt="Europäische Union">
                     </a>
                 </li>
-                <li class="support-item me-5">
+                <li class="support-item">
                     <a class="support-link" href="https://www.berlin.de/sen/wirtschaft/gruenden-und-foerdern/europaeische-strukturfonds/esf/" target="_blank">
                         <img class="support-img img-fluid" src="images/esf-berlin.jpeg" alt="ESF Berlin">
                     </a>
                 </li>
-                <li class="support-item me-5">
+                <li class="support-item">
                     <a class="support-link" href="https://www.berlin.de/sen/web/" target="_blank">
                         <img class="support-img img-fluid" src="images/senatsverwaltung.jpeg" alt="Senatsverwaltung">
                     </a>
                 </li>
-                <li class="support-item me-5">
+                <li class="support-item">
                     <a class="support-link" href="https://www.sibb.de/scholarship" target="_blank">
                         <img class="support-img img-fluid" src="images/sibb.png" alt="SIBB">
                     </a>
@@ -197,7 +197,7 @@
             </a>
         </div>
         <nav class="navbar navbar-expand-lg footer justify-content-center text-center">
-            <p class="m-0 p-3">
+            <p class="footer-text m-0 p-3">
                 Copyright © 2023 UfoCourier. All rights reserved. Built with ❤️ in Berlin.
             </p>
         </nav>

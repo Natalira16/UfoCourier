@@ -346,7 +346,7 @@ div.advantages-item {
 
 div.view-section {
     height: 100%;
-    margin: 50px auto;
+    margin: 50px auto 0;
 }
 
 .shipper-container,
@@ -470,11 +470,11 @@ button.carrier-btn:focus {
 
 /* ECOLOGY */
 
-div.ecology {
+div.ecology-section {
     display: inline-flex;
     flex-direction: column;
     text-align: center;
-    padding: 50px 0;
+    padding: 50px 20px;
     background-color: rgba(0, 128, 0, 0.2);
 }
 
@@ -489,8 +489,9 @@ div.ecology {
 
 .ecology-text {
     font-size: 18px;
+    line-height: 2;
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
 }
 
 .ecology-numbers {
@@ -554,6 +555,10 @@ div.categories {
     font-weight: 500;
 }
 
+div.support-item {
+    margin: 50px auto;
+}
+
 ul.support-list {
     list-style: none;
     padding: 0;
@@ -563,6 +568,10 @@ ul.support-list {
 li.support-item {
     text-align: center;
     padding: 10px;
+}
+
+li.support-item:not(:last-child) {
+    margin-right: 50px;
 }
 
 
@@ -645,6 +654,10 @@ div.about-navbar-container {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+div.member-section {
+    margin: 0 50px;
+}
+
 .team-title {
     font-size: 58px;
 }
@@ -658,19 +671,25 @@ div.about-navbar-container {
 /* DESCRIPTION */
 
 .desc-section {
-    /* max-width: 60%; */
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    /* left: 50;
+    translate: middle; */
+    margin: 0 20% 10px;
     text-align: center;
-    line-height: 46px;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 4px;
 }
 
 p.desc-text {
     font-size: 24px;
+    line-height: 2.5;
     color: var(--main-color);
+    margin: 0;
     padding: 10px 20px;
 }
-
 
 /* CONTACT US */
 
@@ -715,7 +734,9 @@ button.modal-btn:focus {
 
 .contact-text {
     font-size: 18px;
+    line-height: 2;
     margin: 20px auto;
+    padding: 0 20px;
 }
 
 .contact-btn {
@@ -740,13 +761,22 @@ button.modal-btn:focus {
     color: var(--main-yellow);
 }
 
-img.team-img {
-    max-width: 300px;
+div.founder-img {
+    margin-right: 50px;
 }
 
 .user-img {
     font-size: 100px;
 }
+
+
+
+/* HOW IT WORKS */
+
+.howitworks-container {
+    border-bottom: 1px solid var(--main-color);
+}
+
 
 
 
@@ -758,9 +788,9 @@ img.team-img {
         margin-right: 25px;
     }
 
-    /* div.advantages-item:not(:last-child) {
+    div.advantages-item:not(:last-child) {
         margin-right: 100px;
-    } */
+    }
 }
 
 /* Large: 992px - 1199px */
@@ -768,10 +798,105 @@ img.team-img {
     li.nav-item {
         margin: 10px 0px;
     }
+
+    .shipper-container {
+        margin: 0 50px 0 20px;
+    }
+
+    .carrier-container {
+        margin: 0 20px 0 0;
+    }
 }
 
 /* Medium: 768px - 991px */
-@media (max-width: 991.999px) {}
+@media (max-width: 991.999px) {
+    div.advantages-item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .advantages-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .advantages-title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .advantages-desc {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .view-block {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .shipper-container,
+    .carrier-container {
+        position: relative;
+        width: 80%;
+        height: 100%;
+    }
+
+    .shipper-container {
+        margin: 0 0 20px;
+    }
+
+    .carrier-container {
+        margin: 0;
+    }
+
+    div.ecology-section {
+        padding: 30px 10px;
+    }
+
+    .ecology-title {
+        font-size: 36px;
+    }
+
+    .ecology-numbers {
+        font-size: 40px;
+    }
+
+    div.categories {
+        padding: 10px 0;
+        margin: 50px auto;
+    }
+
+    .categories-title {
+        font-size: 36px;
+    }
+
+    .categories-item {
+        font-size: 28px;
+    }
+
+    .support-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    div.support-item {
+        margin: 20px auto;
+    }
+
+    li.support-item {
+        padding: 0;
+    }
+
+    .desc-section {
+        margin: 0 10% 10px;
+    }
+
+    p.desc-text {
+        font-size: 18px;
+    }
+}
 
 /* Small: 576px - 767px */
 @media (max-width: 767.999px) {
@@ -808,9 +933,86 @@ img.team-img {
         margin: 0 auto;
     }
 
-    div.advantages-item {
-        margin: 0;
+    div.advantages-item:not(:last-child) {
+        margin-right: 0;
     }
+
+    .advantages-title {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .advantages-desc {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .support-list {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    li.support-item {
+        max-width: 200px;
+    }
+
+    li.support-item:not(:first-child) {
+        margin-top: 50px;
+    }
+
+    li.support-item:not(:last-child) {
+        margin-right: 0;
+    }
+
+
+    p.footer-text {
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    p.demo-text {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    div.member-section {
+        margin: 0 auto;
+    }
+
+    .team-title {
+        font-size: 36px;
+    }
+
+    div.contact {
+        padding: 20px 0;
+        margin: 50px auto;
+    }
+
+    div.founder-block {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    div.founder-img {
+        margin: 0 0 20px;
+    }
+
+    div.mentor-section,
+    div.advisor-section {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    div.mentor-item:not(:last-child),
+    div.advisor-item:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
 }
 
 /* Extra small: 0px (320px) - 575px */
@@ -823,5 +1025,9 @@ img.team-img {
     h2.subtitle {
         font-size: 18px;
         margin: 0 10px 15px;
+    }
+
+    .ecology-text {
+        font-size: 14px;
     }
 }

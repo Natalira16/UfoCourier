@@ -83,7 +83,7 @@
             <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
     
         <!-- HERO SECTION -->
-        <div class="header-section mb-5"> 
+        <div class="header-section mb-md-5"> 
             <div class="container hero-container mb-5 p-0">
                 <h1 class="title">Your Delivery is our Mission</h1>
                 <h2 class="subtitle">Become a Sender or Courier in a few steps</h2>
@@ -120,14 +120,14 @@
 
             <!-- ADVANTAGES & DESCRIPTION -->
 
-            <div class="advantages-section d-flex justify-content-around">
+            <div class="d-none d-md-block advantages-section d-flex justify-content-around">
                 <div class="row advantages-list">
-                    <div class="col advantages-item me-sm-4">
+                    <div class="col advantages-item">
                         <img class="img-fluid rounded advantages-img" src="images/courier.svg" alt="Everyone is a Courier">
                         <h4 class="advantages-title mt-3 mb-3">Everyone is a Courier</h4>
                         <p class="advantages-desc m-0">delivery company, private driver or just a traveler</p>
                     </div>
-                    <div class="col advantages-item me-sm-4">
+                    <div class="col advantages-item">
                         <img class="img-fluid rounded advantages-img" src="images/passengers.svg" alt="Passengers-Sender">
                         <h4 class="advantages-title mt-3 mb-3">Stay Connected</h4>
                         <p class="advantages-desc m-0">bring the people you love into your life abroad by sending them a meaningful package</p>
@@ -140,14 +140,34 @@
                 </div>
             </div>
         </div>
+
+        <div class="d-block d-md-none advantages-section d-flex justify-content-around">
+            <div class="row advantages-list">
+                <div class="col advantages-item">
+                    <img class="img-fluid rounded advantages-img" src="images/courier.svg" alt="Everyone is a Courier">
+                    <h4 class="advantages-title mt-3 mb-3">Everyone is a Courier</h4>
+                    <p class="advantages-desc m-0">delivery company, private driver or just a traveler</p>
+                </div>
+                <div class="col advantages-item">
+                    <img class="img-fluid rounded advantages-img" src="images/passengers.svg" alt="Passengers-Sender">
+                    <h4 class="advantages-title mt-3 mb-3">Stay Connected</h4>
+                    <p class="advantages-desc m-0">bring the people you love into your life abroad by sending them a meaningful package</p>
+                </div>
+                <div class="col advantages-item">
+                    <img class="img-fluid rounded advantages-img" src="images/village.svg" alt="To the remote places">
+                    <h4 class="advantages-title mt-3 mb-3">Easy Search</h4>
+                    <p class="advantages-desc m-0">booking and communication between shipper and carrier</p>
+                </div>
+            </div>
+        </div>
     
 
 
         <!-- SHIPPER & CARRIER -->
 
         <div class="view-section d-flex justify-content-around">
-            <div class="row">
-                <div class="shipper-container col me-5 p-0">
+            <div class="row m-0 view-block">
+                <div class="shipper-container col p-0">
                     <img class="img-fluid shipper-img" id="shipper" src="images/shipper.png" alt="Shipper">
                     <div class="overlay">
                         <div class="list">
@@ -202,7 +222,7 @@
 
         <!-- ECOLOGICAL SECTION -->
 
-        <div class="ecology d-flex justify-content-center mt-5 mb-5">
+        <div class="ecology-section d-flex justify-content-center mt-5 mb-5">
             <i class="ecology-icon fa-brands fa-envira"></i>
             <h3 class="ecology-title mt-5 mb-5 p-0">ECOLOGICAL SHIPMENT</h3>
             <p class="ecology-text">By sending more fully-loaded vehicles, UfoCourier helps to produce less greenhouse gas emissions and reduce the number of "Empty miles".</p>
@@ -293,27 +313,27 @@
         <!-- SUPPORTED BY -->
 
         <div class="container">
-            <div class="support-item d-flex justify-content-center">
-                <h3 class="support-title mt-4 mb-0 p-0">SUPPORTED BY</h3>
+            <div class="support-item m-0 d-flex justify-content-center">
+                <h3 class="support-title p-0">SUPPORTED BY</h3>
             </div>
-            <div class="support-item mt-5 mb-5 d-flex justify-content-around">
+            <div class="support-item d-flex justify-content-around">
                 <ul class="support-list d-flex align-items-center">
-                    <li class="support-item me-5">
+                    <li class="support-item">
                         <a class="support-link" href="https://www.esf.de/portal/DE/Startseite/inhalt.html" target="_blank">
                             <img class="support-img img-fluid" src="images/europäische-union.jpeg" alt="Europäische Union">
                         </a>
                     </li>
-                    <li class="support-item me-5">
+                    <li class="support-item">
                         <a class="support-link" href="https://www.berlin.de/sen/wirtschaft/gruenden-und-foerdern/europaeische-strukturfonds/esf/" target="_blank">
                             <img class="support-img img-fluid" src="images/esf-berlin.jpeg" alt="ESF Berlin">
                         </a>
                     </li>
-                    <li class="support-item me-5">
+                    <li class="support-item">
                         <a class="support-link" href="https://www.berlin.de/sen/web/" target="_blank">
                             <img class="support-img img-fluid" src="images/senatsverwaltung.jpeg" alt="Senatsverwaltung">
                         </a>
                     </li>
-                    <li class="support-item me-5">
+                    <li class="support-item">
                         <a class="support-link" href="https://www.sibb.de/scholarship" target="_blank">
                             <img class="support-img img-fluid" src="images/sibb.png" alt="SIBB">
                         </a>
@@ -332,24 +352,25 @@
         <!-- FOOTER -->
 
         <div class="mt-0 pt-3 pb-3 footer d-flex justify-content-around">
-        <div class="store-links">
-            <i class="store-link fa-brands fa-app-store"></i>
-            <i class="store-link fa-brands fa-google-pay"></i>
+            <div class="store-links">
+                <i class="store-link fa-brands fa-app-store"></i>
+                <i class="store-link fa-brands fa-google-pay"></i>
+            </div>
+            <div class="media-links">
+                <i class="media-link fa-brands fa-instagram"></i>
+                <a class="media-link" href="https://www.facebook.com/groups/1524221608024719/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a class="media-link" href="https://www.linkedin.com/company/ufocourier/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg footer justify-content-center text-center">
+                <p class="footer-text m-0 p-3">
+                    Copyright © 2023 UfoCourier. All rights reserved. Built with ❤️ in Berlin.
+                </p>
+            </nav>
         </div>
-        <div class="media-links">
-            <i class="media-link fa-brands fa-instagram"></i>
-            <a class="media-link" href="https://www.facebook.com/groups/1524221608024719/" target="_blank">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a class="media-link" href="https://www.linkedin.com/company/ufocourier/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-        </div>
-        <nav class="navbar navbar-expand-lg footer justify-content-center text-center">
-            <p class="m-0 p-3">
-                Copyright © 2023 UfoCourier. All rights reserved. Built with ❤️ in Berlin.
-            </p>
-        </nav>
     </div>
 </body>
 
