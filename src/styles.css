@@ -1,6 +1,6 @@
 :root {
     --font-family: 'Open Sans', sans-serif;
-    --main-color: rgb(14, 91, 200);
+    --main-color: rgb(4, 74, 171);
     --main-orange: rgb(255, 150, 45);
     --main-black: rgb(0, 0, 0);
     --main-white: rgb(255, 255, 255);
@@ -22,6 +22,10 @@ a,
 button,
 p {
     transition: all 300ms ease-in-out;
+}
+
+a:visited {
+    text-decoration: none;
 }
 
 
@@ -122,6 +126,10 @@ a.nav-link {
     color: var(--main-color);
     cursor: pointer;
     outline: none;
+}
+
+li.nav-item:not(:last-child) {
+    margin-right: 20px;
 }
 
 a.nav-link:hover,
@@ -234,13 +242,14 @@ a.dropdown-item {
 
 h1.title {
     font-size: 68px;
+    line-height: 2;
     margin: 50px auto;
     color: var(--main-color);
 }
 
 h2.subtitle {
     font-size: 32px;
-    margin: 0 auto 30px;
+    margin: 0 auto 60px;
     color: var(--main-color);
 }
 
@@ -314,7 +323,7 @@ button.search-btn:focus {
 /* ADVANTAGES */
 
 div.advantages-list {
-    padding: 0;
+    padding: 0 20px;
     margin: 0 auto 10px;
 }
 
@@ -323,6 +332,10 @@ div.advantages-item {
     padding: 0;
     max-width: 300px;
     max-height: auto;
+}
+
+div.advantages-item:not(:last-child) {
+    margin-right: 10%;
 }
 
 .advantages-title {
@@ -354,6 +367,14 @@ div.view-section {
     position: relative;
     width: 50%;
     height: 100%;
+}
+
+.shipper-container {
+    margin: 0 50px 0 10px;
+}
+
+.carrier-container {
+    margin: 0 10px 0 0;
 }
 
 img.shipper-img,
@@ -810,10 +831,6 @@ div.founder-img {
 
 /* Medium: 768px - 991px */
 @media (max-width: 991.999px) {
-    div.advantages-item:not(:last-child) {
-        margin-right: 30px;
-    }
-
     .advantages-img {
         width: 200px;
         height: 200px;
@@ -1024,7 +1041,6 @@ div.founder-img {
 
     h2.subtitle {
         font-size: 18px;
-        margin: 0 10px 15px;
     }
 
     .ecology-text {
