@@ -233,8 +233,8 @@ ul.dropdown-menu {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-a.dropdown-item {
-    color: var(--main-color);
+select.form-select {
+    color: var(--footer-grey);
 }
 
 
@@ -272,7 +272,7 @@ button.dropdown-btn {
 
 input.form-control {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: #6f7175;
+    color: #303030;
     background-color: var(--main-white);
 }
 

@@ -90,23 +90,17 @@
                 <div class="d-flex justify-content-around mb-5">
                     <div class="row search-section">
                         <div class="dropdown col search-item">
-                            <button class="btn dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Select Who
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Sender</a></li>
-                                <li><a class="dropdown-item" href="#">Courier</a></li>
-                            </ul>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected class="dropdown-item">Sender</option>
+                                <option value="1">Courier</option>
+                            </select>
                         </div>
                         <div class="dropdown col search-item">
-                            <button class="btn dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Select What
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Package</a></li>
-                                <li><a class="dropdown-item" href="#">Passenger</a></li>
-                                <li><a class="dropdown-item" href="#">Passenger & Package</a></li>
-                            </ul>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected class="dropdown-item">Package</option>
+                                <option value="1">Passenger</option>
+                                <option value="2">Passenger & Package</option>
+                            </select>
                         </div>
                         <div class="col search-item">
                             <input type="text" class="form-control" style="text-align:center;" placeholder="Select Location" aria-label="Pick-up Location">

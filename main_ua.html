@@ -28,7 +28,7 @@
         <div class="navbar-container fixed-top">
             <nav class="navbar navbar-expand-xl m-0 p-0">
                 <div class="container-fluid p-0">
-                    <a class="navbar-brand d-flex flex-row align-items-center m-0 me-5 p-0" href="index.html">
+                    <a class="navbar-brand d-flex flex-row align-items-center m-0 me-5 p-0" href="main_ua.html">
                         <img src="images/logo2.png" class="d-none d-sm-block logo m-0 p-0" alt="logo" title="Homepage">
                         <img src="images/logo.png" class="d-block d-sm-none logo logo-small m-0" alt="logo" title="Homepage">
                     </a>
@@ -90,26 +90,20 @@
                 <div class="d-flex justify-content-around mb-5">
                     <div class="row search-section">
                         <div class="dropdown col search-item">
-                            <button class="btn dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Обери Хто
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Відправник</a></li>
-                                <li><a class="dropdown-item" href="#">Перевізник</a></li>
-                            </ul>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected class="dropdown-item">Відправник</option>
+                                <option value="1">Перевізник</option>
+                            </select>
                         </div>
                         <div class="dropdown col search-item">
-                            <button class="btn dropdown-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Обери Що
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Посилка</a></li>
-                                <li><a class="dropdown-item" href="#">Пасажир</a></li>
-                                <li><a class="dropdown-item" href="#">Пасажир & Посилка</a></li>
-                            </ul>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected class="dropdown-item">Посилка</option>
+                                <option value="1">Пасажир</option>
+                                <option value="2">Пасажир & Посилка</option>
+                            </select>
                         </div>
                         <div class="col search-item">
-                            <input type="text" class="form-control" style="text-align:center;" placeholder="Обери звідки" aria-label="Pick-up Location">
+                            <input type="text" class="form-control" style="text-align:center;" placeholder="Оберіть звідки" aria-label="Pick-up Location">
                         </div>
                         <div class="col search-item">
                             <button type="button" class="btn search-btn">Пошук</button>
@@ -174,7 +168,7 @@
                             <h4 class="shipper-title mb-5">Відправник</h4>
                             <ul class="shipper-item">
                                 <li class="text-start">
-                                    Система торгів
+                                    Зручна система торгів
                                 </li>
                                 <br/>
                                 <li class="text-start">
@@ -182,7 +176,7 @@
                                 </li>
                                 <br/>
                                 <li class="text-start">
-                                    Пошук серед перевірених перевізників
+                                    Лише перевірені перевізники
                                 </li>
                             </ul>
                             <button type="button" class="btn shipper-btn mt-3">
@@ -206,7 +200,7 @@
                                 </li>
                                 <br/>
                                 <li class="text-start">
-                                    Розумна і проста система управління
+                                    Розумна і проста система управління замовленнями
                                 </li>
                             </ul>
                             <button type="button" class="btn carrier-btn mt-3">
