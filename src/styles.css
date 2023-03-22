@@ -358,7 +358,7 @@ div.advantages-item:not(:last-child) {
 /* SHIPPER & CARRIER */
 
 div.view-section {
-    height: 100%;
+    /* height: 100%; */
     margin: 50px auto 0;
 }
 
@@ -366,7 +366,7 @@ div.view-section {
 .carrier-container {
     position: relative;
     width: 50%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .shipper-container {
@@ -389,10 +389,9 @@ img.carrier-img {
     border-radius: 4px;
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
+    bottom: 0;
     right: 0;
-    height: 90%;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
@@ -429,6 +428,7 @@ img.carrier-img {
     list-style: none;
     font-size: 18px;
     line-height: 2;
+    padding: 0;
 }
 
 button.shipper-btn,
@@ -928,6 +928,8 @@ div.founder-img {
 
     h2.subtitle {
         font-size: 18px;
+        line-height: 2;
+        padding: 0 10px;
     }
 
     .search-section {
@@ -962,6 +964,22 @@ div.founder-img {
     .advantages-desc {
         font-size: 16px;
         font-weight: 300;
+    }
+
+    .shipper-title,
+    .carrier-title {
+        font-size: 18px;
+    }
+
+    .shipper-item,
+    .carrier-item {
+        font-size: 14px;
+    }
+
+    button.shipper-btn,
+    button.carrier-btn {
+        font-size: 12px;
+        line-height: 1.6;
     }
 
     .support-list {
