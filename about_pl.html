@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UfoCourier</title>
+    <meta name="description" content="Your delivery - Our mission" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/7a28aaea4a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- DONATE -->
+    <div class="donate p-2">
+        <p class="donate-text m-0 p-0 d-none d-sm-block">Stoimy po stronie Ukrainy. Dowiedz się, jak możesz wesprzeć Ukrainę <a href="https://u24.gov.ua/" target="_blank" class="donate-link">tutaj</a></p>
+        <p class="donate-text m-0 p-0 d-block d-sm-none"><a href="https://u24.gov.ua/" target="_blank" class="donate-link">WSPIERAĆ UKRAINĘ</a></p>
+    </div>
+
+    <!-- NAVBAR -->
+        <div class="navbar-container fixed-top">
+            <nav class="navbar navbar-expand-xl m-0 p-0">
+                <div class="container-fluid p-0">
+                    <a class="navbar-brand d-flex flex-row align-items-center m-0 me-5 p-0" href="main_pl.html">
+                        <img src="images/logo2.png" class="d-none d-sm-block logo m-0 p-0" alt="logo" title="Homepage">
+                        <img src="images/logo.png" class="d-block d-sm-none logo logo-small m-0" alt="logo" title="Homepage">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-lg-0">
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link shipper-btn" title="Shipper" href="main_pl.html#shipper">Nadawca</a>
+                            </li>
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link carrier-btn" title="Carrier" href="main_pl.html#carrier">Przewoźnik</a>
+                            </li>
+                        </ul>
+                    
+                        <ul class="navbar-nav ms-auto mb-lg-0">
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link" title="About Us" href="howitworks_pl.html">Jak to działa</a>
+                            </li>
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link active-link" title="About Us" href="#">Nasz zespół</a>
+                            </li>
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <ul class="navbar-lang">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" title="Language" data-bs-toggle="dropdown" href="#language" role="button" aria-expanded="false">
+                                            PL
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="about.html">EN</a></li>
+                                            <li><a class="dropdown-item" href="about_ua.html">UA</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link log-btn" title="Log in" href="#login">Login</a>
+                            </li>
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link sign-btn" title="Sign up" href="#signup">Rejestracja</a>
+                            </li>
+                            <li class="nav-item p-0 d-flex align-items-center">
+                                <a class="nav-link about-demo-btn" title="Demo Button" href="#demo">Zamów Demo</a>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </nav>
+        </div>
+
+        <div class="about-header mb-5 position-relative">
+            <div class="desc-section">
+                <p class="desc-text">
+                    <span style="font-weight: 700;">"UfoCourier"</span> – to platforma, która ułatwia znalezienie przewoźników, oferując szybsze i bardziej opłacalne przesyłki międzynarodowe niż tradycyjni przewoźnicy.
+                </p>
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+
+        <!-- HERO SECTION -->
+    
+        <!-- <div class="container header-container mb-5">
+            <h1 class="title">Your Delivery is our Mission</h1>
+            <h2 class="subtitle">Become a Sender or Courier in a few steps</h2>
+            <div class="d-flex justify-content-around">
+                <div class="row mt-5 mb-5 p-3">
+                    <div class="col-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected="1">Select Who</option>
+                            <option value="2">Sender</option>
+                            <option value="3">Courier</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected="1">Select What</option>
+                            <option value="2">Package</option>
+                            <option value="3">Passenger</option>
+                            <option value="4">Passenger & Package</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" placeholder="Select Pick-up Location" aria-label="Pick-up Location">
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn search-btn">Search</button>
+                    </div>
+                </div>    
+            </div>
+        </div> -->
+        <!-- <div class="d-flex justify-content-around mt-5 mb-5">
+            <div class="desc-section ms-5 me-5">
+                <p class="desc-text">
+                    <span style="font-weight: 700;">“UfoCourier”</span> – is a platform that connects minorities living abroad with small delivery partners offering faster and more cost-effective cross-border shipment in comparison to traditional carriers.
+                </p>
+            </div>
+        </div> -->
+
+
+
+    <!-- ABOUT US - NAVBAR -->
+
+    <div class="member-section" id="about">
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link contact-nav active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Zespół</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link contact-nav" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Mentory</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link contact-nav" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Konsultanci</button>
+            </li>
+        </ul>
+    </div>
+
+        <!-- CONTACT US - TEAM -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div class="container">
+                    <div class="text-center">
+                        <h3 class="contact-title mt-5 p-0">Zespół UfoCourier</h3>
+                        <p class="contact-text">To właśnie my: silny i zaangażowany zespół z wieloletnim doświadczeniem w pracy nad profesjonalnymi projektami.</p>
+                    </div>
+                    <div class="row text-center align-items-center mb-5 founder-block">
+                        <div class="founder-img col d-lg-block p-0">
+                            <img src="images/oksana.jpg" class="img-fluid rounded team-img" alt="Oksana">
+                        </div>
+                        <div class="col p-0 project-description button">
+                            <div class="text-md-start">
+                                <h4>Oksana Sawicka (CEO, Co-Founder)</h4>
+                                <p class="team-text">
+                                    Międzynarodowy biznes i ekonomia (studia magisterskie)
+                                    <br/>
+                                    <br/>
+                                    Oksana Sawicka ukończyła studia licencjackie z zakresu stosunków międzynarodowych w mieście Bielsko-Biała. Później uzyskała tytuł magistra na kierunku Biznes Międzynarodowy i Ekonomia...
+                                </p>
+                            
+                                <!-- MODAL BTN -->
+                                <button type="button" class="btn modal-btn me-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="Oksana Sawicka">
+                                    Więcej
+                                </button>
+                            </div>
+
+                            <!-- MAIN MODAL -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Oksana Sawicka</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Oksana Sawicka uzyskała tytuł licencjata w dziedzinie stosunków międzynarodowych na Uniwersytecie w Bielsku-Białej, Polska. Następnie uzyskała tytuł magistra w dziedzinie biznesu międzynarodowego i ekonomii na Uniwersytecie Nauk Stosowanych w Schmalkalden, Niemcy.
+                                                <br/>
+                                                <br/>
+                                                Przez kilka lat pracowała w firmie Ingram Micro CFS Eurohub Fulfilment GmbH, najpierw jako account manager, a później jako kierownik projektu obsługującego sześciocyfrowe rachunki.
+                                                <br/>
+                                                <br/>
+                                                Oksana ma żywe podejście analityczne, dlatego często jest konsultowana jako analityk systemów.
+                                                <br/>
+                                                <br/>
+                                                Oksana zna kilka języków: ukraiński, polski, angielski, niemiecki i rosyjski. W trakcie swojej kariery zawodowej mieszkała w kilku krajach: Ukraina, Polska, USA, a obecnie mieszka w Niemczech. Jest osobą, z którą można się spotkać, jeśli chodzi o naukę języków i zwyczajów poszczególnych kultur.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row text-center align-items-center mb-5 founder-block">
+                        <div class="founder-img col d-lg-block p-0">
+                            <img src="images/pawel.jpg" class="img-fluid rounded team-img" alt="Pawel">
+                        </div>
+                        <div class="col p-0 project-description button">
+                            <div class="text-md-start">
+                                <h4>Paweł Sawicki (CTO, Co-Founder)</h4>
+                                <p class="team-text">
+                                    Informatyka (studia magisterskie)
+                                    <br/>
+                                    <br/>
+                                    Paweł Sawicki jest pasjonatem tworzenia oprogramowania ze szczególnym zainteresowaniem systemami rozproszonymi i oprogramowaniem kontekstowym. Jako student, samodzielnie uczył się...
+                                </p>
+
+                                <!-- MODAL BTN -->
+                                <button type="button" class="btn modal-btn me-3" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="Paweł Sawicki">
+                                    Więcej
+                                </button>
+                            </div>
+
+                            <!-- MAIN MODAL -->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Paweł Sawicki</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Paweł Sawicki jest zapalonym programistą ze szczególnym zainteresowaniem systemami rozproszonymi i oprogramowaniem kontekstowym.
+                                                <br/>
+                                                <br/>
+                                                W latach studenckich nauczył się języka C i X86 assembly oraz napisał swoje pierwsze oprogramowanie dla systemu Linux. Podczas lat studenckich zainteresował się systemami rozproszonymi i inżynierią oprogramowania. W tym czasie mógł zdobyć swoje pierwsze doświadczenie w programowaniu jako pracujący student i freelancer.
+                                                <br/>
+                                                <br/>
+                                                Przed założeniem firmy Paul pracował jako niezależny twórca oprogramowania, konsultant i trener. Jego portfolio obejmuje projekty dla niemieckiego Bundestagu, T-Systems, S-Oliver, Vattenfall, GVL, Hypoport i wielu firm z berlińskiej sceny startupowej.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row text-center align-items-center mb-5 founder-block">
+                        <div class="founder-img col d-lg-block p-0">
+                            <img src="images/nataliia.png" class="img-fluid rounded team-img" alt="Nataliia">
+                        </div>
+                        <div class="col p-0 project-description button">
+                            <div class="text-md-start">
+                                <h4>Nataliia Medvedenko (COO, Co-Founder)</h4>
+                                <p class="team-text">
+                                    Międzynarodowa ekonomia i zarządzanie przedsiębiorstwem (studia magisterskie)
+                                    <br/>
+                                    <br/>
+                                    Nataliia Medvedenko pochodzi z Ukrainy, a obecnie mieszka w Niemczech. Natalia ukończyła studia magisterskie z zakresu ekonomii międzynarodowej i zarządzania biznesem na Uniwersytecie...
+                                </p>
+                                <!-- MODAL BTN -->
+                                <button type="button" class="btn modal-btn me-3" data-bs-toggle="modal" data-bs-target="#exampleModal3" data-bs-whatever="Nataliia Medvedenko">
+                                    Więcej
+                                </button>
+                            </div>
+
+                            <!-- MAIN MODAL -->
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Nataliia Medvedenko</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Nataliia Medvedenko pochodzi z Ukrainy, a obecnie mieszka w Niemczech. Natalia posiada tytuł magistra ekonomii międzynarodowej i zarządzania biznesem z Kijowa na Ukrainie. Ma doświadczenie w biznesie i logistyce.
+                                                <br/>
+                                                <br/>
+                                                Nataliia ma również silne pragnienie zostania informatykiem. Ukończyła kurs tworzenia stron internetowych, aby poszerzyć swoje horyzonty i zastosować swoją wiedzę w nowych kreatywnych projektach.
+                                                <br/>
+                                                <br/>
+                                                Nataliia jest osobą zmotywowaną do działania i zorientowaną na zespół, która woli koordynować interesy różnych części systemu, aby osiągnąć cele zespołu. Mówi po ukraińsku, angielsku, niemiecku i rosyjsku, uwielbia różne style muzyki, taniec, śpiew i malarstwo.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CONTACT US - MENTORS -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="container p-0">
+                    <div class="row text-center align-items-center mb-5 mentor-section">
+                        <div class="mentor-img col d-lg-block p-0">
+                            <i class="fa-regular fa-user user-img m-5"></i>
+                        </div>
+                        <div class="col p-0 project-description button">
+                            <div class="text-md-start mentor-item">
+                                <h4>Name Surname (CEO, Co-Founder)</h4>
+                                <p class="team-text">
+                                    Company Name
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center align-items-center mb-5 mentor-section">
+                        <div class="mentor-img col d-lg-block p-0">
+                            <i class="fa-regular fa-user user-img m-5"></i>
+                        </div>
+                        <div class="col p-0 project-description button">
+                            <div class="text-md-start mentor-item">
+                                <h4>Name Surname (CEO, Co-Founder)</h4>
+                                <p class="team-text">
+                                    Company Name
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT US - ADVISORS -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <div class="container p-0">
+                    <div class="row text-center align-items-center mb-5 advisor-section">
+                        <div class="advisor-img col d-lg-block p-0">
+                            <i class="fa-regular fa-user user-img m-5"></i>
+                        </div>
+                        <div class="col p-0 project-description button">
+                            <div class="text-md-start advisor-item">
+                                <h4>Name Surname (CEO, Co-Founder)</h4>
+                                <p class="team-text">
+                                    Company Name
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center align-items-center mb-5 advisor-section">
+                        <div class="advisor-img col d-lg-block p-0">
+                            <i class="fa-regular fa-user user-img m-5"></i>
+                        </div>
+                        <div class="col p-0 project-description button">
+                            <div class="text-md-start advisor-item">
+                                <h4>Name Surname (CEO, Co-Founder)</h4>
+                                <p class="team-text">
+                                    Company Name
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="contact d-flex justify-content-center">
+        <h3 class="mt-4 mb-4 p-0">KONTAKT Z NAMI</h3>
+        <p class="contact-text">Omówmy możliwości automatyzacji transportu i pomóżmy Twojej firmie rozwijać się szybciej - razem.</p>
+        <button type="button" class="contact-btn">KONTAKT</button>
+    </div>
+
+    <!-- SUPPORTED BY -->
+
+    <div class="container">
+        <div class="support-item m-0 d-flex justify-content-center">
+            <h3 class="support-title p-0">POPIERANY PRZEZ</h3>
+        </div>
+        <div class="support-item d-flex justify-content-around">
+            <ul class="support-list d-flex align-items-center">
+                <li class="support-item">
+                    <a class="support-link" href="https://www.esf.de/portal/DE/Startseite/inhalt.html" target="_blank">
+                        <img class="support-img img-fluid" src="images/europäische-union.jpeg" alt="Europäische Union">
+                    </a>
+                </li>
+                <li class="support-item">
+                    <a class="support-link" href="https://www.berlin.de/sen/wirtschaft/gruenden-und-foerdern/europaeische-strukturfonds/esf/" target="_blank">
+                        <img class="support-img img-fluid" src="images/esf-berlin.jpeg" alt="ESF Berlin">
+                    </a>
+                </li>
+                <li class="support-item">
+                    <a class="support-link" href="https://www.berlin.de/sen/web/" target="_blank">
+                        <img class="support-img img-fluid" src="images/senatsverwaltung.jpeg" alt="Senatsverwaltung">
+                    </a>
+                </li>
+                <li class="support-item">
+                    <a class="support-link" href="https://www.sibb.de/scholarship" target="_blank">
+                        <img class="support-img img-fluid" src="images/sibb.png" alt="SIBB">
+                    </a>
+                </li>
+                <li class="support-item">
+                    <a class="support-link" href="https://startupwiseguys.com/" target="_blank">
+                        <img class="support-img img-fluid" src="images/startupwiseguys.png" alt="Startupwiseguys">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+
+    <div class="mt-0 pt-3 pb-3 footer d-flex justify-content-around">
+        <div class="store-links">
+            <i class="store-link fa-brands fa-app-store"></i>
+            <i class="store-link fa-brands fa-google-pay"></i>
+        </div>
+        <div class="media-links">
+            <i class="media-link fa-brands fa-instagram"></i>
+            <a class="media-link" href="https://www.facebook.com/groups/1524221608024719/" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a class="media-link" href="https://www.linkedin.com/company/ufocourier/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg footer justify-content-center text-center">
+            <p class="footer-text m-0 p-3">
+                Copyright © 2023 UfoCourier. All rights reserved. Built with ❤️ in Berlin.
+            </p>
+        </nav>
+    </div>
+</body>
+
+<script>
+    // SCROLL TOP BTN
+    let mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+
+    // MODAL WINDOW BTN
+    const myModal = document.getElementById('myModal')
+    const myInput = document.getElementById('myInput')
+
+    // myModal.addEventListener('shown.bs.modal', () => {
+    //     myInput.focus()
+    // })
+
+
+    // EMAIL CONTACT BTN
+    const exampleModal = document.getElementById('exampleModal') // change id
+    exampleModal.addEventListener('show.bs.modal', event => {
+        // Button that triggered the modal
+        const button = event.relatedTarget
+        // Extract info from data-bs-* attributes
+        const recipient = button.getAttribute('data-bs-whatever')
+        // If necessary, you could initiate an AJAX request here
+        // and then do the updating in a callback.
+        //
+        // Update the modal's content.
+        const modalTitle = exampleModal.querySelector('.modal-title')
+        const modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+        modalTitle.textContent = `${recipient}`
+        modalBodyInput.value = recipient
+    })
+</script>
+</html>
