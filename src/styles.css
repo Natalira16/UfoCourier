@@ -239,6 +239,12 @@ select.form-select {
     color: var(--footer-grey);
 }
 
+select:focus,
+option:focus {
+    outline: none;
+}
+
+
 
 /* HERO */
 
